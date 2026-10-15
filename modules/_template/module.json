@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": null,
+  "name": null,
+  "kind": null,
+  "status": "template-only",
+  "description": null,
+  "maintainers": [],
+  "environment": {},
+  "verified_file_systems": [],
+  "evidence": [],
+  "limitations": [],
+  "note": "Заготовка метаданных, не реализованный модуль. После копирования заменить поля подтверждёнными сведениями."
+}

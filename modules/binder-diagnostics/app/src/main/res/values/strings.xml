@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Native Binder Diagnostics</string>
+    <string name="simulation_badge">Local model · Binder connection diagnostics</string>
+    <string name="loading">Initializing native library…</string>
+    <string name="native_status">Native status: %1$s</string>
+    <string name="native_error">Native initialization error: %1$s</string>
+    <string name="control_section">Control</string>
+    <string name="btn_discovery">Run discovery</string>
+    <string name="btn_full_exploit">Run full simulation</string>
+    <string name="btn_reset">Reset local state</string>
+    <string name="btn_device_mode">Open / check Binder connection</string>
+    <string name="btn_simulation_mode">Close device / use simulation</string>
+    <string name="results_section">Results &amp; logs</string>
+    <string name="results_placeholder">Results will appear here after running the simulation.\n\nUse the control buttons above to start.</string>
+    <string name="status_discovery_started">Searching simulated offsets…</string>
+    <string name="status_simulation_running">Running full simulation…</string>
+    <string name="status_resetting">Resetting local state…</string>
+    <string name="status_device_running">Checking Binder device connection…</string>
+    <string name="status_switching_to_simulation">Closing device and selecting the local model…</string>
+    <string name="device_connected">Binder connection verified. Device diagnostics are active.</string>
+    <string name="device_unavailable">Binder connection unavailable. See diagnostic details below.</string>
+    <string name="device_report">=== Binder diagnostics ===\n\n%1$s\n\n%2$s</string>
+    <string name="simulation_mode_report">Local simulation selected.\n\n%1$s</string>
+    <string name="status_error">Operation failed. See results for details.</string>
+    <string name="initialization_failed">The native library could not be initialized. Operations are unavailable.</string>
+    <string name="operation_interrupted">The previous operation was interrupted. Run it again to obtain a result.</string>
+    <string name="operation_failed">Operation failed: %1$s</string>
+    <string name="offset_not_found">Not found</string>
+    <string name="result_yes">YES</string>
+    <string name="result_no">NO</string>
+    <string name="discovery_report">=== Discovery complete ===\n\nOptimal offset: %1$d\n\nSimulation state:\n%2$s</string>
+    <string name="simulation_report">=== Simulation result ===\n\nSuccess: %1$s\nOptimal offset: %2$s\nPhases completed: %3$d/4\nExecution time: %4$d ms\n\nSimulation state:\n%5$s\n\n=== Detailed logs ===\n\n%6$s</string>
+    <string name="reset_report">Local diagnostic or simulation state has been reset.\n\n%1$s</string>
+</resources>

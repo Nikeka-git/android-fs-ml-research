@@ -1,0 +1,125 @@
+{
+  "source_directory": "NativeSimulation-Production-Backup (исходный локальный снимок)",
+  "inspection_mode": "read-only static inspection; no build, execution, changes, or source copying",
+  "inspection_date": "2026-10-15",
+  "project_name": "NativeBinderDiagnostics",
+  "project_name_evidence": "settings.gradle.kts:17",
+  "technologies": [
+    {
+      "fact": "Android application with Kotlin and JNI/C++17",
+      "evidence": [
+        "build.gradle.kts:2",
+        "build.gradle.kts:3",
+        "app/src/main/java/com/example/simulation/NativeCore.kt:44",
+        "app/src/main/cpp/CMakeLists.txt:7",
+        "app/src/main/cpp/CMakeLists.txt:8"
+      ]
+    },
+    {
+      "fact": "compileSdk and targetSdk 36, minSdk 24, ARM64 and x86_64",
+      "evidence": [
+        "app/build.gradle.kts:8",
+        "app/build.gradle.kts:15",
+        "app/build.gradle.kts:16",
+        "app/build.gradle.kts:23"
+      ]
+    }
+  ],
+  "implemented_scope": [
+    {
+      "fact": "Local in-memory simulation with deterministic candidate search",
+      "evidence": [
+        "app/src/main/java/com/example/simulation/NativeCore.kt:3",
+        "app/src/main/java/com/example/simulation/SearchEngine.kt:3",
+        "app/src/main/java/com/example/simulation/SearchEngine.kt:5"
+      ]
+    },
+    {
+      "fact": "Optional Binder protocol diagnostics; simulation operations rejected in device mode",
+      "evidence": [
+        "app/src/main/java/com/example/simulation/NativeCore.kt:34",
+        "app/src/main/java/com/example/simulation/NativeCore.kt:37",
+        "app/src/main/java/com/example/simulation/NativeCore.kt:70",
+        "app/src/main/cpp/native_session.h:98"
+      ]
+    },
+    {
+      "fact": "Root elevation explicitly unsupported",
+      "evidence": [
+        "app/src/main/cpp/native_session.h:119",
+        "app/src/main/cpp/native_session.h:121",
+        "app/src/main/cpp/native_session.h:122"
+      ]
+    },
+    {
+      "fact": "Separate Phase 2 ordinary filesystem helper API, with header compile checks rather than JNI/UI integration",
+      "evidence": [
+        "app/src/main/cpp/phase2/phase2_session.h:30",
+        "app/src/main/cpp/phase2/file_access.h:123",
+        "app/src/main/cpp/CMakeLists.txt:11",
+        "app/src/main/cpp/CMakeLists.txt:13",
+        "app/src/main/cpp/tests/phase2_header_compile.cpp:1"
+      ]
+    }
+  ],
+  "missing_or_not_found": [
+    "No .git file or directory found under supplied source directory; no source Git chronology can be established from it.",
+    "No ML framework dependency in app/build.gradle.kts; only JUnit is declared at lines 46-48.",
+    "No model, dataset, training pipeline or ML evaluation artifact found in non-build source inventory; case-insensitive search for machine learning, tensorflow, pytorch, onnx, dataset, training returned no matches.",
+    "No ext4, f2fs or erofs references found in non-build files; no evidence of validated support for multiple Android filesystem implementations.",
+    "No saved instrumentation or CTest/native execution logs found inside supplied directory; documentary pass claims remain unverified."
+  ],
+  "stored_test_evidence": [
+    {
+      "fact": "Saved JUnit XML reports 24 tests, 0 failures, 0 errors, 0 skipped",
+      "evidence": "app/build/test-results/testDebugUnitTest/TEST-com.example.simulation.SimulationDomainTest.xml:2",
+      "stored_timestamp_utc": "2026-10-15T03:02:43.663Z",
+      "limitation": "Existing report read, not rerun; fake simulation kernel and mocked devices are used in JVM tests at SimulationDomainTest.kt:373 and :415."
+    },
+    {
+      "fact": "Stored lint report ends with 0 errors, 1 warning",
+      "evidence": "app/build/reports/lint-results-debug.txt:12",
+      "limitation": "Existing report read, not rerun; warning is Gradle version availability."
+    }
+  ],
+  "test_source_presence": [
+    "app/src/test/java/com/example/simulation/SimulationDomainTest.kt:11",
+    "app/src/androidTest/java/com/example/simulation/DeviceModeInstrumentedTest.java:19",
+    "app/src/androidTest/java/com/example/simulation/MainActivityInstrumentedTest.java:22",
+    "app/src/androidTest/java/com/example/simulation/NativeCoreInstrumentedTest.java:12",
+    "app/src/main/cpp/tests/native_diagnostic_test.cpp:18",
+    "app/src/main/cpp/CMakeLists.txt:40",
+    "app/src/main/cpp/CMakeLists.txt:51"
+  ],
+  "documentary_claims_only": [
+    {
+      "claim": "Builds, 2/2 CTest, native emulator suites and 19 instrumentation tests passed",
+      "evidence": "AUDIT_REPORT.md:27-36",
+      "handling": "Do not report these as independently verified execution results without raw logs."
+    },
+    {
+      "claim": "Working local model and Binder diagnostics; no exploitation/root functionality",
+      "evidence": [
+        "PRODUCTION_README.md:3-8",
+        "BACKUP_INFO.md:20-24"
+      ],
+      "handling": "Consistent with inspected API and native-session code."
+    }
+  ],
+  "publication_scope_classification": {
+    "active_apk": "Local simulation and Binder protocol diagnostics; no operational exploit confirmed in active APK linkage.",
+    "phase2": "Independent ordinary filesystem helper, identity/privilege observation and diagnostic APIs; compile-check dependency in Android APK, no JNI/UI entry points.",
+    "phase3": "Unlinked, incomplete legacy files with exploit-oriented declarations and inline transaction-related content; not reviewed sufficiently to classify the entire directory as a safe diagnostic artifact. Exclude from a clean diagnostic publication subset.",
+    "phase3_linkage_evidence": "Search for phase3, uaf_exploitation.h and binder_transaction.h found only self/internal references in the two Phase 3 files; CMakeLists.txt:7 and :11-16 only link production_core and Phase 2 header checks."
+  },
+  "current_snapshot_sha256": {
+    "settings.gradle.kts": "9D62E0FE0480C8D5DE62DAFA9C52F95174DED400BF81453C63816D65BEB1C7B0",
+    "app/build.gradle.kts": "5FB4AC177EAB253C8AC7737C5C1EC16B081295BC54B7DB637A2C2EBBB003A5CA",
+    "app/src/main/cpp/CMakeLists.txt": "2AC63B23436AFBDFA5FA8C32F6B60DEB35579CB5DDCABEAB10F0AA16BF2B83DB",
+    "app/src/main/java/com/example/simulation/NativeCore.kt": "E8596788989C33652E5BCC1F4711FF8ED6366005D0C987DE1B28564905575D78",
+    "app/src/main/cpp/native_session.h": "A7C55DB26130C05353A9499A0A2ABFBFB4346EFD77BAC8F23184BCBE40F1B993",
+    "app/build/test-results/testDebugUnitTest/TEST-com.example.simulation.SimulationDomainTest.xml": "07C074D6AEC3AF584AE5B734E758B1C3BB031712D55AF11C43E7E5C726BFE214",
+    "app/build/reports/lint-results-debug.txt": "770AD90D9CC1658F7C083DD5B4B207BC66374A0B36B470D6AE683E8AA46B668A"
+  },
+  "report_recommendation": "Describe as an existing Android simulation and diagnostic prototype forming an initial technical foundation. State ML, dataset, filesystem scope validation and generation/evaluation as future work; do not label the current project a completed ML exploit generation module or invent earlier activity."
+}

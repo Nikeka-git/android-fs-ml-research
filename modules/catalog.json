@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "binder-diagnostics",
+      "path": "modules/binder-diagnostics",
+      "manifest": "modules/binder-diagnostics/module.json",
+      "kind": "diagnostic-prototype",
+      "status": "existing-snapshot",
+      "description": "Локальная симуляция Android и диагностика Binder; не завершённый эксплоит и не ML-модуль"
+    }
+  ],
+  "template_directory": "modules/_template",
+  "note": "Шаблон не считается реализованным модулем. Новые модули регистрируются после добавления их реальных материалов."
+}

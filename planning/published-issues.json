@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "repository": "Nikeka-git/android-fs-ml-research",
+  "api_version": "2026-03-10",
+  "recorded_at_utc": "2026-10-15T14:08:17.7743976Z",
+  "notice": "Identifiers of real GitHub issues; original plan status is Planned. This file does not assert work completion or historical activity.",
+  "issues": [
+    {
+      "plan_id": "P01",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867702126,
+      "number": 1,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/1",
+      "node_id": "I_kwDOVK_pa88AAAABXb4Hbg",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P02",
+      "module_id": "binder-diagnostics",
+      "original_plan_status": "Planned",
+      "id": 5867702848,
+      "number": 2,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/2",
+      "node_id": "I_kwDOVK_pa88AAAABXb4KQA",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P03",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867703542,
+      "number": 3,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/3",
+      "node_id": "I_kwDOVK_pa88AAAABXb4M9g",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P04",
+      "module_id": "binder-diagnostics",
+      "original_plan_status": "Planned",
+      "id": 5867704218,
+      "number": 4,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/4",
+      "node_id": "I_kwDOVK_pa88AAAABXb4Pmg",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P05",
+      "module_id": "binder-diagnostics",
+      "original_plan_status": "Planned",
+      "id": 5867704797,
+      "number": 5,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/5",
+      "node_id": "I_kwDOVK_pa88AAAABXb4R3Q",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P06",
+      "module_id": "binder-diagnostics",
+      "original_plan_status": "Planned",
+      "id": 5867705471,
+      "number": 6,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/6",
+      "node_id": "I_kwDOVK_pa88AAAABXb4Ufw",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P07",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867706032,
+      "number": 7,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/7",
+      "node_id": "I_kwDOVK_pa88AAAABXb4WsA",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P08",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867708316,
+      "number": 8,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/8",
+      "node_id": "I_kwDOVK_pa88AAAABXb4fnA",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P09",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867709227,
+      "number": 9,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/9",
+      "node_id": "I_kwDOVK_pa88AAAABXb4jKw",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P10",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867709953,
+      "number": 10,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/10",
+      "node_id": "I_kwDOVK_pa88AAAABXb4mAQ",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P11",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867710677,
+      "number": 11,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/11",
+      "node_id": "I_kwDOVK_pa88AAAABXb4o1Q",
+      "disposition": "created"
+    },
+    {
+      "plan_id": "P12",
+      "module_id": "shared",
+      "original_plan_status": "Planned",
+      "id": 5867711365,
+      "number": 12,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/12",
+      "node_id": "I_kwDOVK_pa88AAAABXb4rhQ",
+      "disposition": "created"
+    }
+  ]
+}

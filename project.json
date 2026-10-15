@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
+  "language": "ru",
+  "scaffold_status": "Монорепозиторий для нескольких модулей с закрытым GitHub-репозиторием и общей доской; предоставлен один диагностический снимок, официальный состав отчёта и данные двух участников ожидаются",
+  "repository_layout": {
+    "type": "monorepo",
+    "module_catalog": "modules/catalog.json",
+    "module_template": "modules/_template",
+    "shared_components": "shared",
+    "experiments": "experiments",
+    "common_planning": "planning/issues.json",
+    "common_documentation": "docs"
+  },
+  "reported_stage": "По сообщению автора, ведётся разработка эксплойта",
+  "observed_snapshot": {
+    "project_name": "NativeBinderDiagnostics",
+    "module_id": "binder-diagnostics",
+    "module_kind": "diagnostic-prototype",
+    "module_status": "Текущий предоставленный снимок",
+    "inspection_date": "2026-10-15",
+    "inspection_mode": "Статическая инвентаризация без запуска приложения, сборки или повторного запуска тестов",
+    "source_directory_modified": false,
+    "source_git_history_found": false,
+    "baseline_directory": "modules/binder-diagnostics",
+    "excluded_relative_source_directory": "app/src/main/cpp/phase3",
+    "active_application_scope": "Локальная симуляция и диагностика Binder",
+    "search_scope": "Детерминированный поиск кандидатов в симуляции",
+    "phase2_integration": "Отдельные файловые helper-заголовки; CMake задаёт проверку их компиляции, JNI/UI-подключения не найдены",
+    "ml_components_found": false,
+    "dataset_or_training_found": false,
+    "multiple_filesystem_support_verified": false,
+    "android_build_configuration": {
+      "compile_sdk": 36,
+      "target_sdk": 36,
+      "min_sdk": 24,
+      "abis": [
+        "arm64-v8a",
+        "x86_64"
+      ],
+      "meaning": "Значения конфигурации сборки, не перечень проверенных исследовательских платформ"
+    },
+    "stored_reports": {
+      "manifest": "evidence/stored/manifest.json",
+      "junit_xml": "evidence/stored/junit-unit-tests.xml",
+      "lint_text": "evidence/stored/lint-results-debug.txt",
+      "execution_status": "Существующие отчёты прочитаны и сохранены; проверки не перезапускались"
+    }
+  },
+  "cloud_status": {
+    "repository_created": true,
+    "repository_visibility": "private",
+    "board_created": true,
+    "board_layout": "Board",
+    "board_columns": [
+      "Todo",
+      "In Progress",
+      "Done"
+    ],
+    "open_issues_auto_add_enabled": true,
+    "github_authentication_required": false,
+    "authentication_status": "Вход выполнен, репозиторий и доска созданы",
+    "published_issue_mapping": "planning/published-issues.json",
+    "issues_created": 12,
+    "board_observed_counts": {
+      "Todo": 12,
+      "In Progress": 0,
+      "Done": 0
+    }
+  },
+  "supervisor": {
+    "name": "Zhaksylyk Kozhakhmet",
+    "account": null,
+    "contact": null
+  },
+  "team": [
+    {
+      "id": "member_1",
+      "name": "Tsybus Nikita",
+      "gitlab_username": null,
+      "github_username": "Nikeka-git",
+      "contribution_status": "Не подтверждён материалами",
+      "confirmed_contributions": []
+    },
+    {
+      "id": "member_2",
+      "name": null,
+      "gitlab_username": null,
+      "github_username": null,
+      "contribution_status": "Данные ожидаются; вклад не подтверждён",
+      "confirmed_contributions": []
+    },
+    {
+      "id": "member_3",
+      "name": null,
+      "gitlab_username": null,
+      "github_username": null,
+      "contribution_status": "Данные ожидаются; вклад не подтверждён",
+      "confirmed_contributions": []
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Nikeka-git/android-fs-ml-research",
+    "board": "https://github.com/users/Nikeka-git/projects/1",
+    "official_requirements": null,
+    "report_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/aprobation-report-draft.pdf",
+    "report_editable_html": "docs/report/aprobation-report-draft.html",
+    "board_screenshots_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/board-screenshots.pdf",
+    "submission_form": "https://forms.cloud.microsoft/r/Yy6AXT5pe3"
+  },
+  "submission": {
+    "deadline_as_announced": "24 октября 2026 года, до 18:00",
+    "deadline_timezone": null,
+    "representative_member_id": null,
+    "github_acceptance_confirmed": false,
+    "report_status": "Предварительный черновик; полнота по официальным требованиям не подтверждена",
+    "official_report_sections_received": false,
+    "team_details_complete": false,
+    "access_verified": false,
+    "submitted": false
+  },
+  "research_decisions": {
+    "file_systems": null,
+    "android_versions": null,
+    "model": null,
+    "data_sources": null,
+    "evaluation_protocol": null
+  },
+  "reports_status": {
+    "report": "preliminary; official requirements and team details pending",
+    "board_screenshots": "14 real screenshots: 2 board views and 12 issues",
+    "android_tests_rerun": false
+  }
+}

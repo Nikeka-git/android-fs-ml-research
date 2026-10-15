@@ -1,0 +1,176 @@
+{
+  "description": "Unaltered browser screenshots of real GitHub board and all 12 issues. Dates are current capture times.",
+  "captures": [
+    {
+      "type": "board-overview",
+      "url": "https://github.com/users/Nikeka-git/projects/1",
+      "file": "board-overview.jpg",
+      "recordedUtc": "2026-10-15T14:24:12.071Z",
+      "observedCounts": {
+        "Todo": 12,
+        "InProgress": 0,
+        "Done": 0
+      },
+      "sha256": "e3a1ff1691415708d87a0e7cca7990003b1aa131629ff2c19154a28e305d7731",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "type": "board-lower",
+      "url": "https://github.com/users/Nikeka-git/projects/1",
+      "file": "board-lower.jpg",
+      "recordedUtc": "2026-10-15T14:24:26.587Z",
+      "sha256": "ee42c0a0e19668fd047b8fe6806b1451681373648f9c76ca1e5ddd0a20e6d09d",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "number": 1,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/1",
+      "file": "issue-01.jpg",
+      "recordedUtc": "2026-10-15T14:20:57.688Z",
+      "statusTodo": true,
+      "sha256": "d4a49725122123ea3447986fb7bc7c0e7c69efb907cc1ca33baad50df9c79faa",
+      "pixels": [
+        1264,
+        1263
+      ]
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/2",
+      "file": "issue-02.jpg",
+      "recordedUtc": "2026-10-15T14:23:58.099Z",
+      "statusTodo": true,
+      "sha256": "0dbbb11df4a782811b6d894806c08f8d88ba5246b579bc7a61d3e56ef7fc043e",
+      "pixels": [
+        1264,
+        1354
+      ]
+    },
+    {
+      "number": 3,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/3",
+      "file": "issue-03.jpg",
+      "recordedUtc": "2026-10-15T14:21:11.984Z",
+      "statusTodo": true,
+      "sha256": "322d990b6ecf67771dc13943b88970d4f9329e1a9abbcbcb4ad2dc1276721090",
+      "pixels": [
+        1264,
+        1170
+      ]
+    },
+    {
+      "number": 4,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/4",
+      "file": "issue-04.jpg",
+      "recordedUtc": "2026-10-15T14:21:18.169Z",
+      "statusTodo": true,
+      "sha256": "a0237f6adbe6ab9ebca360039fc2f16c1a2d4bdb6e8e4ca96632eebea44f2a35",
+      "pixels": [
+        1264,
+        1170
+      ]
+    },
+    {
+      "number": 5,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/5",
+      "file": "issue-05.jpg",
+      "recordedUtc": "2026-10-15T14:21:50.793Z",
+      "statusTodo": true,
+      "sha256": "ba83d432b7b4192376115e5e0559e23c5751cbe1e491f775bcbfd30e55fe6912",
+      "pixels": [
+        1264,
+        1263
+      ]
+    },
+    {
+      "number": 6,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/6",
+      "file": "issue-06.jpg",
+      "recordedUtc": "2026-10-15T14:22:16.700Z",
+      "statusTodo": true,
+      "sha256": "3db96544c6fb9e0957a1b4d5c061834d442787ae00d39feefe643a5b2d5a7ce1",
+      "pixels": [
+        1264,
+        1263
+      ]
+    },
+    {
+      "number": 7,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/7",
+      "file": "issue-07.jpg",
+      "recordedUtc": "2026-10-15T14:22:24.384Z",
+      "statusTodo": true,
+      "sha256": "896de3e790e2948efea1aacc15c0e3ed8f6afb5678cb76b9e9f5929ef81e0653",
+      "pixels": [
+        1264,
+        1263
+      ]
+    },
+    {
+      "number": 8,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/8",
+      "file": "issue-08.jpg",
+      "recordedUtc": "2026-10-15T14:22:55.219Z",
+      "statusTodo": true,
+      "sha256": "b4487aecea122f329b4357a278baaf5bf4edf5d87cf27f0bf56e15d78a77ca72",
+      "pixels": [
+        1264,
+        1398
+      ]
+    },
+    {
+      "number": 9,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/9",
+      "file": "issue-09.jpg",
+      "recordedUtc": "2026-10-15T14:23:23.178Z",
+      "statusTodo": true,
+      "sha256": "84c9cce953228675d8c66c021c75e48b6409f5ceb909bb551893ffd13ad57f47",
+      "pixels": [
+        1264,
+        1170
+      ]
+    },
+    {
+      "number": 10,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/10",
+      "file": "issue-10.jpg",
+      "recordedUtc": "2026-10-15T14:23:28.691Z",
+      "statusTodo": true,
+      "sha256": "6e55f76cf05ea385fb0fccf37d1eb55e4ae5a40cc3dddc4ab33a78331a5b1d85",
+      "pixels": [
+        1264,
+        1263
+      ]
+    },
+    {
+      "number": 11,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/11",
+      "file": "issue-11.jpg",
+      "recordedUtc": "2026-10-15T14:23:35.568Z",
+      "statusTodo": true,
+      "sha256": "c25a48089b5713ab2ee894e40c63a4ef9ca68ce3f8d1077691c5761287357979",
+      "pixels": [
+        1264,
+        1328
+      ]
+    },
+    {
+      "number": 12,
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/12",
+      "file": "issue-12.jpg",
+      "recordedUtc": "2026-10-15T14:23:42.892Z",
+      "statusTodo": true,
+      "sha256": "386505225fd3be0a94b7157c8c382ea0757292b62c32a52f35bb30540b91bcdc",
+      "pixels": [
+        1264,
+        1170
+      ]
+    }
+  ]
+}

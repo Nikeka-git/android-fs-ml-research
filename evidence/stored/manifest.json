@@ -1,0 +1,300 @@
+{
+  "snapshot_created_utc": "2026-10-15T14:15:07.569549+00:00",
+  "source_project": "NativeSimulation-Production-Backup",
+  "handling": "Clean copy of the inspected diagnostic baseline. Source directory unchanged. No source build or test execution performed. Hashes identify this snapshot, not historical activity.",
+  "excluded": [
+    "app/src/main/cpp/phase3 (unlinked unfinished legacy code)",
+    "old narrative audit and exploit-workflow documents",
+    "local.properties and local SDK paths",
+    "build/cache files except two explicitly saved evidence reports",
+    "APK files and other generated binaries"
+  ],
+  "stored_junit": {
+    "name": "com.example.simulation.SimulationDomainTest",
+    "tests": "24",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-15T03:02:43.663Z",
+    "time": "0.803"
+  },
+  "stored_lint_summary": "0 errors, 1 warning; saved report, not rerun",
+  "copied_files": [
+    {
+      "source": "build.gradle.kts",
+      "destination": "modules/binder-diagnostics/build.gradle.kts",
+      "sha256": "e38fe7a7de5f62e1990d3886ddc74919de21d8f1ac8da3639b673a8d5c9519ed",
+      "bytes": 143
+    },
+    {
+      "source": "settings.gradle.kts",
+      "destination": "modules/binder-diagnostics/settings.gradle.kts",
+      "sha256": "9d62e0fe0480c8d5de62dafa9c52f95174ded400bf81453c63816d65beb1c7b0",
+      "bytes": 343
+    },
+    {
+      "source": "gradle.properties",
+      "destination": "modules/binder-diagnostics/gradle.properties",
+      "sha256": "ef133a3823e54117379f34ac35089091f5ca64b0d7be7600fe465dadfa994142",
+      "bytes": 78
+    },
+    {
+      "source": "gradlew",
+      "destination": "modules/binder-diagnostics/gradlew",
+      "sha256": "c76f16038b4e70b84ed0b3b9e08e82a8ecaf66ec0efdfdecdece92520fa3cecb",
+      "bytes": 8774
+    },
+    {
+      "source": "gradlew.bat",
+      "destination": "modules/binder-diagnostics/gradlew.bat",
+      "sha256": "0f3ed8f03b50934cb8c48b15a470d5c20a30a5385825e48b55bcc8ea3d8f8e18",
+      "bytes": 2894
+    },
+    {
+      "source": "gradle/wrapper/gradle-wrapper.jar",
+      "destination": "modules/binder-diagnostics/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "81a82aaea5abcc8ff68b3dfcb58b3c3c429378efd98e7433460610fecd7ae45f",
+      "bytes": 43705
+    },
+    {
+      "source": "gradle/wrapper/gradle-wrapper.properties",
+      "destination": "modules/binder-diagnostics/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "43435c29fb1f73cf47e618e5aebe03b2e4f5d7f14781bf1aa63394c083dbb861",
+      "bytes": 339
+    },
+    {
+      "source": "app/src/androidTest/AndroidManifest.xml",
+      "destination": "modules/binder-diagnostics/app/src/androidTest/AndroidManifest.xml",
+      "sha256": "31ddfcd8e5e83bb4bfae6c3c2667f4bbaff8a8a1460915d721ae5c4e0efd4791",
+      "bytes": 324
+    },
+    {
+      "source": "app/src/androidTest/java/com/example/simulation/ConcurrentTestSupport.java",
+      "destination": "modules/binder-diagnostics/app/src/androidTest/java/com/example/simulation/ConcurrentTestSupport.java",
+      "sha256": "6b1db359e9ce103e9503dad7ff34ee08308db9f9b6441ffbd6e2ff9f1bb2e3bb",
+      "bytes": 5015
+    },
+    {
+      "source": "app/src/androidTest/java/com/example/simulation/DeviceModeInstrumentedTest.java",
+      "destination": "modules/binder-diagnostics/app/src/androidTest/java/com/example/simulation/DeviceModeInstrumentedTest.java",
+      "sha256": "edd6a75309380dbc6c9a2c45bd298199b249fd5b46ba61d3d3b9537f3e4f5255",
+      "bytes": 12480
+    },
+    {
+      "source": "app/src/androidTest/java/com/example/simulation/MainActivityInstrumentedTest.java",
+      "destination": "modules/binder-diagnostics/app/src/androidTest/java/com/example/simulation/MainActivityInstrumentedTest.java",
+      "sha256": "1d63a2b80db1f01159d5acb9c27ffc2c02446bb10b427445b9b1f04c6e0a518e",
+      "bytes": 13210
+    },
+    {
+      "source": "app/src/androidTest/java/com/example/simulation/NativeCoreInstrumentedTest.java",
+      "destination": "modules/binder-diagnostics/app/src/androidTest/java/com/example/simulation/NativeCoreInstrumentedTest.java",
+      "sha256": "9779d06daf3ae923d685a40de793667a3b3ba743cee9130dfd59578661f27810",
+      "bytes": 8601
+    },
+    {
+      "source": "app/src/main/AndroidManifest.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/AndroidManifest.xml",
+      "sha256": "a9660150bd9d101ba2766499b8a7bc119e2a52d3bf1bf6a11299e0010813775d",
+      "bytes": 825
+    },
+    {
+      "source": "app/src/main/cpp/android_binder_backend.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/android_binder_backend.h",
+      "sha256": "9b0ab40eaefdbc88a6a23d944997193504ec86e032f4f8cdeb53c06b3e49a5be",
+      "bytes": 1477
+    },
+    {
+      "source": "app/src/main/cpp/CMakeLists.txt",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/CMakeLists.txt",
+      "sha256": "2ac63b23436afbdfa5fa8c32f6b60deb35579cb5ddcabeab10f0aa16bf2b83db",
+      "bytes": 2908
+    },
+    {
+      "source": "app/src/main/cpp/native_session.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/native_session.h",
+      "sha256": "a7c55db26130c05353a9499a0a2abfbfb4346efd77bac8f23184bcbe40f1b993",
+      "bytes": 6556
+    },
+    {
+      "source": "app/src/main/cpp/phase2/binder_exploit.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/phase2/binder_exploit.h",
+      "sha256": "01aed82a4e3e119c1d28c2dc374cbf6a8782dc9a03b3eefcb5f9e1219af0b1f2",
+      "bytes": 5959
+    },
+    {
+      "source": "app/src/main/cpp/phase2/file_access.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/phase2/file_access.h",
+      "sha256": "3286dd655746ac54bdc4c7bb35560075ca562b4b23b782139987c2f0b30ffed5",
+      "bytes": 14680
+    },
+    {
+      "source": "app/src/main/cpp/phase2/json_utils.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/phase2/json_utils.h",
+      "sha256": "fbc1c6b5f4269f9158c45d842023b3c2a5b934d3a3d86678cc22cfe7df7a589e",
+      "bytes": 2092
+    },
+    {
+      "source": "app/src/main/cpp/phase2/phase2_session.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/phase2/phase2_session.h",
+      "sha256": "53d6f2013549dfe960990d79a35e74f6ec194c723c92dda9b937e1dbc30d796c",
+      "bytes": 7969
+    },
+    {
+      "source": "app/src/main/cpp/phase2/privilege_manager.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/phase2/privilege_manager.h",
+      "sha256": "8a2a5dc47c458e77dcb8576461b2e75062218133538a82be2365c8cb5cd65c87",
+      "bytes": 8226
+    },
+    {
+      "source": "app/src/main/cpp/production_core.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/production_core.cpp",
+      "sha256": "ad3ae475f35330e742a81e819d332533128e8acfea091273ddb5e89f5a0ece69",
+      "bytes": 5181
+    },
+    {
+      "source": "app/src/main/cpp/real_binder_model.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/real_binder_model.h",
+      "sha256": "81aa3f7472f6380c8b2cd829feadca23b0b943642467b0e490100446e85f27b8",
+      "bytes": 6340
+    },
+    {
+      "source": "app/src/main/cpp/simulation_model.h",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/simulation_model.h",
+      "sha256": "6359b59ccab3a10fecd5267ed6732e185efc2c338616710adf612347917364db",
+      "bytes": 3266
+    },
+    {
+      "source": "app/src/main/cpp/tests/native_diagnostic_test.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/tests/native_diagnostic_test.cpp",
+      "sha256": "394c7335a556d0738c7fe2638eba4724f27a4e5149ade0f1b4d5b3fdc82db996",
+      "bytes": 11770
+    },
+    {
+      "source": "app/src/main/cpp/tests/phase2_file_test.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/tests/phase2_file_test.cpp",
+      "sha256": "68f9e124d0aaa2a2ee369b65360ed85a9cd10c9d613a4ce5b4c755a118585d34",
+      "bytes": 26035
+    },
+    {
+      "source": "app/src/main/cpp/tests/phase2_header_compile.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/tests/phase2_header_compile.cpp",
+      "sha256": "bc9594645b6544b00120112c34b051db074e8fbbea1e416a375767b6cc8758ea",
+      "bytes": 608
+    },
+    {
+      "source": "app/src/main/cpp/tests/phase2_security_test.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/tests/phase2_security_test.cpp",
+      "sha256": "a21ee6aaa593c2b678338daf2280ebc473346bcc7bffde07e778c009b7320a3d",
+      "bytes": 14420
+    },
+    {
+      "source": "app/src/main/cpp/tests/phase2_session_test.cpp",
+      "destination": "modules/binder-diagnostics/app/src/main/cpp/tests/phase2_session_test.cpp",
+      "sha256": "1f53f0c5fb0f468f4e7428cf80fc8a701af9ced99fff8522fdf3078b8159f974",
+      "bytes": 12394
+    },
+    {
+      "source": "app/src/main/java/com/example/simulation/DiscoveryModule.kt",
+      "destination": "modules/binder-diagnostics/app/src/main/java/com/example/simulation/DiscoveryModule.kt",
+      "sha256": "78c9e8e0916126fbfe09f947fb6e6d7ccb677fcd381504265b5d0f92049ff71f",
+      "bytes": 4155
+    },
+    {
+      "source": "app/src/main/java/com/example/simulation/ExploitOrchestrator.kt",
+      "destination": "modules/binder-diagnostics/app/src/main/java/com/example/simulation/ExploitOrchestrator.kt",
+      "sha256": "c523e43e20d4448d441abe67baa9b3a4b1ce4e4de22afa8278f3de2d459b15a7",
+      "bytes": 6863
+    },
+    {
+      "source": "app/src/main/java/com/example/simulation/MainActivity.kt",
+      "destination": "modules/binder-diagnostics/app/src/main/java/com/example/simulation/MainActivity.kt",
+      "sha256": "9d18c959495d60cad29e93a6b0a9fc94060352b8032e4d6c44431ce23c3ed6f3",
+      "bytes": 9251
+    },
+    {
+      "source": "app/src/main/java/com/example/simulation/NativeCore.kt",
+      "destination": "modules/binder-diagnostics/app/src/main/java/com/example/simulation/NativeCore.kt",
+      "sha256": "e8596788989c33652e5bcc1f4711ff8ed6366005d0c987de1b28564905575d78",
+      "bytes": 4277
+    },
+    {
+      "source": "app/src/main/java/com/example/simulation/SearchEngine.kt",
+      "destination": "modules/binder-diagnostics/app/src/main/java/com/example/simulation/SearchEngine.kt",
+      "sha256": "1607e598f7659c036dca0e2c593df8a4720452143391ea6bc9251f91f4e846aa",
+      "bytes": 619
+    },
+    {
+      "source": "app/src/main/res/drawable/ic_launcher.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/drawable/ic_launcher.xml",
+      "sha256": "c4d5785d9cb6b6b041be7a40fec081f04e2a98356e6f377a57d4f27333b15ea4",
+      "bytes": 485
+    },
+    {
+      "source": "app/src/main/res/layout/activity_main.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/layout/activity_main.xml",
+      "sha256": "431aea8b08002e07d9be05109bcf2ab8b9a87aa714350c5e0cb3d0ef7e10016a",
+      "bytes": 5755
+    },
+    {
+      "source": "app/src/main/res/values/colors.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/values/colors.xml",
+      "sha256": "7f999453acd41932dc913a7cdb3bce0a2f27c34be51f84b06880c0f309e3fe68",
+      "bytes": 117
+    },
+    {
+      "source": "app/src/main/res/values/strings.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/values/strings.xml",
+      "sha256": "d86c790b562b3b68986a774ca315d90e5bd905613828ba6d518ea50ff371450d",
+      "bytes": 2809
+    },
+    {
+      "source": "app/src/main/res/xml/backup_rules.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/xml/backup_rules.xml",
+      "sha256": "865cae97840e81b9950d70457a05c5c1125a68364b0a83f44cd3daa030bc7e96",
+      "bytes": 487
+    },
+    {
+      "source": "app/src/main/res/xml/data_extraction_rules.xml",
+      "destination": "modules/binder-diagnostics/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "dc17288cbf202529f659e8c271d40cfb66a3f60564a46d2cae268920d03651a3",
+      "bytes": 1193
+    },
+    {
+      "source": "app/src/test/java/com/example/simulation/SimulationDomainTest.kt",
+      "destination": "modules/binder-diagnostics/app/src/test/java/com/example/simulation/SimulationDomainTest.kt",
+      "sha256": "8f29a4c6ef8fd530dcbaca668182202226aed15665f7a792039b90ec6c183a39",
+      "bytes": 17776
+    },
+    {
+      "source": "tools/run-instrumented-tests.ps1",
+      "destination": "modules/binder-diagnostics/tools/run-instrumented-tests.ps1",
+      "sha256": "2982bf5ebf0e6ae75d38a83559ab5996adb0fc5665f5af2976bf869e7094bd2c",
+      "bytes": 2659
+    },
+    {
+      "source": "tools/run-phase2-tests.ps1",
+      "destination": "modules/binder-diagnostics/tools/run-phase2-tests.ps1",
+      "sha256": "0dabc0d2ec52190b4bda1d54f63c0d1e992a3e78cca188e0dd4bbe8393e21bc4",
+      "bytes": 7012
+    },
+    {
+      "source": "app/build.gradle.kts",
+      "destination": "modules/binder-diagnostics/app/build.gradle.kts",
+      "sha256": "5fb4ac177eab253c8ac7737c5c1ec16b081295bc54b7db637a2c2ebbb003a5ca",
+      "bytes": 1161
+    },
+    {
+      "source": "app/build/test-results/testDebugUnitTest/TEST-com.example.simulation.SimulationDomainTest.xml",
+      "destination": "evidence/stored/junit-unit-tests.xml",
+      "sha256": "07c074d6aec3af584ae5b734e758b1c3bb031712d55af11c43e7e5c726bfe214",
+      "bytes": 5010
+    },
+    {
+      "source": "app/build/reports/lint-results-debug.txt",
+      "destination": "evidence/stored/lint-results-debug.txt",
+      "sha256": "770ad90d9cc1658f7c083dd5b4b207bc66374a0b36b470d6ae683e8aa46b668a",
+      "bytes": 820
+    }
+  ]
+}

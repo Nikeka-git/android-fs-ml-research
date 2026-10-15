@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.simulation.SimulationDomainTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2026-10-15T03:02:43.663Z" hostname="DESKTOP-JF7VOOG" time="0.803">
+  <properties/>
+  <testcase name="anAlreadyCancelledFullWorkflowDoesNotResetExistingState" classname="com.example.simulation.SimulationDomainTest" time="0.195"/>
+  <testcase name="zeroIsAValidOptimalOffsetAndLeavesTheSelectedState" classname="com.example.simulation.SimulationDomainTest" time="0.102"/>
+  <testcase name="workerFailuresRetainTheirCauseInDiagnostics" classname="com.example.simulation.SimulationDomainTest" time="0.071"/>
+  <testcase name="noCandidateDoesNotReportDiscoveryAsCompleted" classname="com.example.simulation.SimulationDomainTest" time="0.011"/>
+  <testcase name="overflowingTargetAddressesAreSkippedRatherThanWrapped" classname="com.example.simulation.SimulationDomainTest" time="0.001"/>
+  <testcase name="invalidModelAddressFailsBeforeAnyCandidateIsApplied" classname="com.example.simulation.SimulationDomainTest" time="0.003"/>
+  <testcase name="interruptionCancelsBothWorkersBeforeTheWorkflowReturns" classname="com.example.simulation.SimulationDomainTest" time="0.012"/>
+  <testcase name="sharedWorkflowLockPreventsASecondDiscoveryFromChangingStateDuringTheFirst" classname="com.example.simulation.SimulationDomainTest" time="0.122"/>
+  <testcase name="aSuccessfulDeviceProbeCannotBeReportedAsSimulationSuccess" classname="com.example.simulation.SimulationDomainTest" time="0.005"/>
+  <testcase name="anAlreadyCancelledDiscoveryDoesNotModifyExistingState" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <testcase name="noCandidateIsDistinctFromZeroAndRestoresBaseline" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <testcase name="largeCandidateValuesDoNotOverflow" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <testcase name="candidateOrderIsCenteredOnZeroEvenWhenRangeIsNotDivisibleByStep" classname="com.example.simulation.SimulationDomainTest" time="0.0"/>
+  <testcase name="retriesAreBoundedAndCanRecoverATransientFailure" classname="com.example.simulation.SimulationDomainTest" time="0.0"/>
+  <testcase name="closingDiagnosticDeviceAllowsANewLocalSimulation" classname="com.example.simulation.SimulationDomainTest" time="0.007"/>
+  <testcase name="discoveryCancellationStopsImmediatelyAndResetsState" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <testcase name="workerTimeoutCancelsTasksAndLeavesTheOrchestratorReusable" classname="com.example.simulation.SimulationDomainTest" time="0.217"/>
+  <testcase name="fullWorkflowCanRunRepeatedlyAndUsesMonotonicElapsedTime" classname="com.example.simulation.SimulationDomainTest" time="0.006"/>
+  <testcase name="invalidSearchConfigurationIsRejected" classname="com.example.simulation.SimulationDomainTest" time="0.011"/>
+  <testcase name="failedFinalHealthValidationDoesNotCompleteValidationPhase" classname="com.example.simulation.SimulationDomainTest" time="0.008"/>
+  <testcase name="connectivityProbeAlwaysRestoresBaseline" classname="com.example.simulation.SimulationDomainTest" time="0.003"/>
+  <testcase name="deviceDiagnosticModeRejectsDiscoveryBeforeAnyModelMutation" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <testcase name="failedFinalApplicationPreservesOffsetAndCompletedPhasesOnly" classname="com.example.simulation.SimulationDomainTest" time="0.005"/>
+  <testcase name="discoveryChoosesNearestHealthyOffsetAndUsesDeterministicTieBreak" classname="com.example.simulation.SimulationDomainTest" time="0.002"/>
+  <system-out><![CDATA[[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 64
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 64
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 64
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 0
+[DISCOVERY] Searching simulator offsets: range=±256, step=8, retries=3
+[DISCOVERY] Healthy simulator offset: 64
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

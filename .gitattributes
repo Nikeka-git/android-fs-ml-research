@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve the exact bytes identified in the imported snapshot manifest.
+modules/binder-diagnostics/** -text
+evidence/stored/** -text
+*.pdf binary
+*.jpg binary
+*.png binary
+*.jar binary
