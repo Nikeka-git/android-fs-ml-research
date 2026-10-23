@@ -8,6 +8,15 @@
       "kind": "diagnostic-prototype",
       "status": "existing-snapshot",
       "description": "Локальная симуляция Android и диагностика Binder; не завершённый эксплоит и не ML-модуль"
+    },
+    {
+      "id": "android-poc-research",
+      "path": "modules/android-poc-research",
+      "manifest": "modules/android-poc-research/module.json",
+      "kind": "research-snapshot",
+      "status": "existing-snapshot",
+      "verification_status": "unverified",
+      "description": "Снимок исходников и отчётов исследования Android PoC; сборка и выполнение при импорте не проверялись"
     }
   ],
   "template_directory": "modules/_template",

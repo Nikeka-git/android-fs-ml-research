@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
   "language": "ru",
-  "scaffold_status": "Монорепозиторий для нескольких модулей с закрытым GitHub-репозиторием и общей доской; предоставлен один диагностический снимок, официальный состав отчёта и данные двух участников ожидаются",
+  "scaffold_status": "Монорепозиторий с закрытым GitHub-репозиторием и общей доской; предоставлены диагностический снимок и единый исследовательский снимок PoC, официальный состав отчёта и данные двух участников ожидаются",
   "repository_layout": {
     "type": "monorepo",
     "module_catalog": "modules/catalog.json",
@@ -130,5 +130,15 @@
     "report": "preliminary; official requirements and team details pending",
     "board_screenshots": "14 real screenshots: 2 board views and 12 issues",
     "android_tests_rerun": false
-  }
+  },
+  "imported_research_snapshots": [
+    {
+      "module_id": "android-poc-research",
+      "import_date": "2026-10-23",
+      "path": "modules/android-poc-research",
+      "manifest": "evidence/imports/android-poc-research/manifest.json",
+      "summary": "docs/research/android-poc-research.md",
+      "execution_status": "Существующие материалы перенесены без сборки и запуска PoC"
+    }
+  ]
 }

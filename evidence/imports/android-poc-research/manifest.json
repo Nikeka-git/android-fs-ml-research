@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "import_id": "android-poc-research",
+  "module_id": "android-poc-research",
+  "import_date": "2026-10-23",
+  "source_directory_label": "EEE",
+  "originating_prepared_repository": "Nikeka-git/android-poc-research",
+  "originating_prepared_commit": "0b379916e8cda2ab7949ac64d00e3827f2ace7b8",
+  "source_creation_date": null,
+  "source_creation_date_status": "unknown",
+  "original_file_count": 321,
+  "preserved_original_text_files": 204,
+  "module_original_text_files": 203,
+  "shared_original_summary": "docs/research/android-poc-research.md",
+  "file_index": "FILE_INDEX.csv",
+  "hash_algorithm": "SHA-256",
+  "excluded": {
+    "total_files": 117,
+    "categories": {
+      "ELF binary": 101,
+      "archive": 3,
+      "binary material": 2,
+      "raw diagnostic log": 11
+    },
+    "disposition": "local-only",
+    "note": "Диагностические журналы, архивы и бинарные результаты сборки сохранены отдельно локально; их содержимое в импорт не включено"
+  },
+  "verification": {
+    "status": "unverified",
+    "source_bytes_preserved": true,
+    "code_executed": false,
+    "build_run": false,
+    "tests_run": false,
+    "runtime_results_verified": false,
+    "note": "Выполнены инвентаризация, сопоставление путей и проверка SHA-256; исходные заявления о результатах не подтверждались новым запуском"
+  },
+  "history_note": "Дата импорта фактическая; неизвестные даты создания и прежняя история разработки не восстанавливались"
+}

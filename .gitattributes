@@ -6,3 +6,8 @@ evidence/stored/** -text
 *.jpg binary
 *.png binary
 *.jar binary
+
+# Preserve exact bytes of the imported Android research snapshot.
+modules/android-poc-research/** -text
+docs/research/android-poc-research.md -text
+evidence/imports/android-poc-research/** -text

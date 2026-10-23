@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "android-poc-research",
+  "name": "Android PoC Research",
+  "kind": "research-snapshot",
+  "status": "existing-snapshot",
+  "verification_status": "unverified",
+  "description": "Снимок существующих исходников и отчётов исследования Android PoC с сохранением исходной структуры папок",
+  "maintainers": [],
+  "import_date": "2026-10-23",
+  "source": {
+    "directory_label": "EEE",
+    "groups": [
+      "971/",
+      "testex/VERSIONS/",
+      "badspin_official/"
+    ],
+    "originating_prepared_commit": "0b379916e8cda2ab7949ac64d00e3827f2ace7b8",
+    "creation_date": null,
+    "creation_date_status": "unknown"
+  },
+  "archive_reference": "../../evidence/imports/android-poc-research/manifest.json",
+  "environment": {
+    "verification_status": "unverified",
+    "note": "Сведения об окружении сохранены в исходных отчётах и при импорте независимо не проверялись"
+  },
+  "verified_file_systems": [],
+  "evidence": [
+    "../../evidence/imports/android-poc-research/manifest.json",
+    "../../evidence/imports/android-poc-research/FILE_INDEX.csv",
+    "../../docs/research/android-poc-research.md"
+  ],
+  "limitations": [
+    "Исходники и исходные отчёты скопированы без изменения содержимого",
+    "Код, сборка и тесты при импорте не запускались; работоспособность не проверена",
+    "Утверждения исходных отчётов не являются независимо подтверждёнными результатами импорта",
+    "Диагностические журналы, архивы и бинарные результаты сборки остаются локально и в импорт не включены",
+    "Дата импорта фактическая; неизвестная история создания материалов не восстановлена"
+  ]
+}
