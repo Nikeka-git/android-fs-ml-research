@@ -24,8 +24,8 @@
 | Участник | GitHub | Текущий вклад и ответственность |
 |---|---|---|
 | Tsybus Nikita Valentinovich | [Nikeka-git](https://github.com/Nikeka-git) | Техническое руководство, архитектура и основная работа над прототипом и исследованием по сообщению автора; подготовка репозитория и материалов подтверждена коммитами |
-| Kassymgali Bakytzhan Zhenisuly | [Kerey404](https://github.com/Kerey404) | Предлагаемая ответственность следующего этапа: подготовка исследовательских данных и методики оценки; завершённый индивидуальный вклад пока не подтверждён |
-| Galidullaeva Aliya Khantanirovna | [aliiyaaa](https://github.com/aliiyaaa) | Предлагаемая ответственность следующего этапа: аналитическая документация и оформление результатов; завершённый индивидуальный вклад пока не подтверждён |
+| Kassymgali Bakytzhan Zhenisuly | [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки |
+| Galidullaeva Aliya Khantanirovna | [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов |
 
 Подробности и ссылки находятся в [docs/team.md](docs/team.md). YouTrack не используется. В репозитории есть [GitHub Issues](https://github.com/Nikeka-git/android-fs-ml-research/issues) и [общая доска](https://github.com/users/Nikeka-git/projects/1); плановые задачи не выданы за выполненные индивидуальные работы.
 
