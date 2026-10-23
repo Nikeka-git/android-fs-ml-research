@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
   "language": "ru",
-  "scaffold_status": "Монорепозиторий с закрытым GitHub-репозиторием и общей доской; предоставлены диагностический снимок и единый исследовательский снимок PoC, официальный состав отчёта и данные двух участников ожидаются",
+  "scaffold_status": "Публичный монорепозиторий с двумя снимками и документацией первого апробационного периода; вклад двух участников требует подтверждения",
   "repository_layout": {
     "type": "monorepo",
     "module_catalog": "modules/catalog.json",
@@ -12,7 +12,7 @@
     "common_planning": "planning/issues.json",
     "common_documentation": "docs"
   },
-  "reported_stage": "По сообщению автора, ведётся разработка эксплойта",
+  "reported_stage": "Исследовательская база и диагностический прототип; ML-выбор существующего эксплойта является целью дальнейшей работы",
   "observed_snapshot": {
     "project_name": "NativeBinderDiagnostics",
     "module_id": "binder-diagnostics",
@@ -49,7 +49,7 @@
   },
   "cloud_status": {
     "repository_created": true,
-    "repository_visibility": "private",
+    "repository_visibility": "public",
     "board_created": true,
     "board_layout": "Board",
     "board_columns": [
@@ -66,7 +66,9 @@
       "Todo": 12,
       "In Progress": 0,
       "Done": 0
-    }
+    },
+    "board_observed_date": "2026-10-15",
+    "board_observation_scope": "Historical board screenshots; current counts not rechecked"
   },
   "supervisor": {
     "name": "Zhaksylyk Kozhakhmet",
@@ -76,27 +78,36 @@
   "team": [
     {
       "id": "member_1",
-      "name": "Tsybus Nikita",
-      "gitlab_username": null,
+      "name": "Tsybus Nikita Valentinovich",
       "github_username": "Nikeka-git",
-      "contribution_status": "Не подтверждён материалами",
-      "confirmed_contributions": []
+      "gitlab_username": null,
+      "responsibility": "Технический лидер: архитектура, реализация прототипа и основная исследовательская работа по сообщению автора",
+      "contribution_status": "Подготовка и импорт материалов подтверждены историей репозитория",
+      "confirmed_contributions": [
+        "https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202",
+        "https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d"
+      ],
+      "youtrack_task_ids": []
     },
     {
       "id": "member_2",
-      "name": null,
+      "name": "Kassymgali Bakytzhan Zhenisuly",
+      "github_username": "Kerey404",
       "gitlab_username": null,
-      "github_username": null,
-      "contribution_status": "Данные ожидаются; вклад не подтверждён",
-      "confirmed_contributions": []
+      "responsibility": "Предлагаемая роль следующего этапа: подготовка исследовательских данных и методики оценки",
+      "contribution_status": "Завершённый индивидуальный вклад требует подтверждения",
+      "confirmed_contributions": [],
+      "youtrack_task_ids": []
     },
     {
       "id": "member_3",
-      "name": null,
+      "name": "Galidullaeva Aliya Khantanirovna",
+      "github_username": "aliiyaaa",
       "gitlab_username": null,
-      "github_username": null,
-      "contribution_status": "Данные ожидаются; вклад не подтверждён",
-      "confirmed_contributions": []
+      "responsibility": "Предлагаемая роль следующего этапа: аналитическая документация и оформление результатов",
+      "contribution_status": "Завершённый индивидуальный вклад требует подтверждения",
+      "confirmed_contributions": [],
+      "youtrack_task_ids": []
     }
   ],
   "links": {
@@ -106,18 +117,32 @@
     "report_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/aprobation-report-draft.pdf",
     "report_editable_html": "docs/report/aprobation-report-draft.html",
     "board_screenshots_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/board-screenshots.pdf",
-    "submission_form": "https://forms.cloud.microsoft/r/Yy6AXT5pe3"
+    "submission_form": "https://forms.cloud.microsoft/r/Yy6AXT5pe3",
+    "period_1_version": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
+    "period_1_answers": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/prob-period-1.md"
   },
   "submission": {
     "deadline_as_announced": "24 октября 2026 года, до 18:00",
     "deadline_timezone": null,
     "representative_member_id": null,
-    "github_acceptance_confirmed": false,
+    "github_acceptance_confirmed": true,
     "report_status": "Предварительный черновик; полнота по официальным требованиям не подтверждена",
     "official_report_sections_received": false,
-    "team_details_complete": false,
+    "team_details_complete": true,
     "access_verified": false,
-    "submitted": false
+    "submitted": false,
+    "team_contribution_evidence_complete": false,
+    "access_mode": "public-repository",
+    "probationary_period_1": {
+      "tag": "prob-period-1",
+      "version_url": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
+      "answers": "docs/prob-period-1.md",
+      "scope": "Предоставленные пункты 4–7 формы",
+      "youtrack_used": false,
+      "individual_contributions_complete": false,
+      "new_builds_or_experiments_run": false
+    },
+    "repository_access_verified": true
   },
   "research_decisions": {
     "file_systems": null,
@@ -127,8 +152,8 @@
     "evaluation_protocol": null
   },
   "reports_status": {
-    "report": "preliminary; official requirements and team details pending",
-    "board_screenshots": "14 real screenshots: 2 board views and 12 issues",
+    "report": "Historical preliminary draft dated 2026-10-15; current stage described in docs/prob-period-1.md",
+    "board_screenshots": "Historical screenshots dated 2026-10-15; no fresh board capture claimed",
     "android_tests_rerun": false
   },
   "imported_research_snapshots": [
@@ -140,5 +165,7 @@
       "summary": "docs/research/android-poc-research.md",
       "execution_status": "Существующие материалы перенесены без сборки и запуска PoC"
     }
-  ]
+  ],
+  "research_goal": "ML/AI-модуль для автоматического выбора наиболее подходящего существующего эксплойта по характеристикам Android-устройства",
+  "research_goal_source": "Уточнение автора от 2026-10-23"
 }
