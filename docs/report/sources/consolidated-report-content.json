@@ -1,0 +1,1105 @@
+{
+  "metadata": {
+    "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
+    "subtitle": "Consolidated report - Probationary period 1",
+    "report_date": "24 October 2026",
+    "repository_url": "https://github.com/Nikeka-git/android-fs-ml-research",
+    "tag": "prob-period-1",
+    "tag_url": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
+    "commit": "a50c495b30366b298fa8c7990772096c512773f9",
+    "prototype_url": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1/modules/binder-diagnostics",
+    "source_note": "Reviewed research/evidence baseline shown above. The refreshed submission tag also contains this report and its editable sources; no new runtime or ML result is claimed.",
+    "team": [
+      {
+        "name": "Tsybus Nikita Valentinovich",
+        "group": "SE-2421",
+        "github": "Nikeka-git"
+      },
+      {
+        "name": "Kassymgali Bakytzhan Zhenisuly",
+        "group": "SE-2421",
+        "github": "Kerey404"
+      },
+      {
+        "name": "Galidullaeva Aliya Khantanirovna",
+        "group": "SE-2407",
+        "github": "aliiyaaa"
+      }
+    ],
+    "supervisor": "Zhaksylyk Kozhakhmet"
+  },
+  "sections": [
+    {
+      "number": 1,
+      "title": "Project proposal",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "<b>Official title:</b> Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems."
+        },
+        {
+          "type": "p",
+          "text": "The team's clarified research goal is to investigate ML/AI-assisted selection of existing research materials using Android device characteristics. The official title is retained, while the present probationary stage is a diagnostic and evidence-preparation stage. A trained selection model or a new exploit-generation system is not delivered in this version."
+        },
+        {
+          "type": "h2",
+          "text": "Problem and research question"
+        },
+        {
+          "type": "p",
+          "text": "Research artifacts can describe different device contexts, revisions, operating assumptions and evidence levels. A source file, a diagnostic text and a reproduced observation are distinct kinds of material. Before evaluating a future intelligent component, the team needs an inspectable prototype and a traceable record of what each artifact establishes."
+        },
+        {
+          "type": "p",
+          "text": "The current-stage question is: can the available Android diagnostic prototype, research snapshots and source records be organized so that an independent reader can identify their origin, scope, limitations and individual contributors? Future effectiveness claims require a separate agreed experimental study."
+        },
+        {
+          "type": "h2",
+          "text": "Objectives and deliverables"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Objective",
+            "Deliverable in this version",
+            "State"
+          ],
+          "rows": [
+            [
+              "Organize the technical baseline",
+              "Two registered modules, module descriptions and source manifests",
+              "Prepared"
+            ],
+            [
+              "Preserve research materials",
+              "204-file import index and a registry of 12 public diagnostic texts",
+              "Prepared"
+            ],
+            [
+              "Define research documentation",
+              "Data-preparation rules, evaluation methodology and limitations",
+              "Prepared"
+            ],
+            [
+              "Trace team work",
+              "Commit/PR links, 23 real task records and dated screenshots",
+              "Prepared"
+            ],
+            [
+              "Demonstrate future ML effectiveness",
+              "Trained model, independent evaluation and device-level results",
+              "Not yet evidenced"
+            ]
+          ],
+          "widths": [
+            0.25,
+            0.54,
+            0.21
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Scope and completion boundary"
+        },
+        {
+          "type": "p",
+          "text": "This report consolidates the current artifacts and plans. It records preserved tests as historical results and recent verification as integrity checking. Android builds, device trials, PoC execution and ML training were not performed while preparing the submission. The three PoC source groups remain one research module, in the repository structure selected by the team."
+        },
+        {
+          "type": "p",
+          "text": "The project repository and submission version are accessible at <link href=\"https://github.com/Nikeka-git/android-fs-ml-research\" color=\"#15598B\">the public repository</link> and <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1\" color=\"#15598B\">prob-period-1</link>. The technical and evidence baseline reviewed for this report is <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/a50c495b30366b298fa8c7990772096c512773f9\" color=\"#15598B\">a50c495</link>. The final tag also includes this report and its editable sources in a documentation-only revision."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Evidence of relevance",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Android security research spans application behavior, operating-system services, kernel interfaces and storage. These layers should not be conflated. AOSP documents Binder as an IPC system and SELinux as a mandatory-access-control mechanism; a denied diagnostic operation or a Binder observation cannot by itself establish a file-system defect. <link href=\"https://source.android.com/docs/core/architecture/ipc/binder-overview\" color=\"#15598B\">[2]</link> <link href=\"https://source.android.com/docs/security/features/selinux\" color=\"#15598B\">[1]</link>"
+        },
+        {
+          "type": "p",
+          "text": "The ext4 documentation and the original F2FS paper describe different file-system designs and terminology. They provide background for selecting and describing future research contexts, rather than evidence that the team has tested either file system on a particular Android device. <link href=\"https://www.kernel.org/doc/html/latest/filesystems/ext4/\" color=\"#15598B\">[4]</link> <link href=\"https://www.usenix.org/conference/fast15/technical-sessions/presentation/lee\" color=\"#15598B\">[3]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "Why the present preparation matters"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Traceability makes it possible to distinguish an imported artifact from a result produced by the current team and revision.",
+            "Dataset documentation exposes source, annotation and usage limitations before model conclusions are drawn.",
+            "A visible separation between a local diagnostic prototype and a future research goal makes the current stage reviewable.",
+            "Linked tasks, commits and evidence let the supervisor and committee inspect individual contributions."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "These priorities are consistent with the emphasis on data documentation in Datasheets for Datasets and on integrity and verification in the NIST Secure Software Development Framework. They are an academic rationale for this stage, not a claim of full conformance or certification. <link href=\"https://arxiv.org/abs/1803.09010v8\" color=\"#15598B\">[6]</link> <link href=\"https://csrc.nist.gov/pubs/sp/800/218/final\" color=\"#15598B\">[5]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "Project-specific evidence and practical value"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Available material",
+            "Value to this stage",
+            "Limit of the evidence"
+          ],
+          "rows": [
+            [
+              "Android/Kotlin/JNI/C++ snapshot",
+              "Concrete diagnostic prototype source to inspect",
+              "No fresh post-import build or device run"
+            ],
+            [
+              "Three groups in one PoC research module",
+              "Preserved, navigable source and report collection",
+              "Presence does not prove original authorship or execution"
+            ],
+            [
+              "12-source registry, 46,570 bytes",
+              "Pinned origins, sizes and SHA-256 values",
+              "Small diagnostic-text corpus; labels await independent review"
+            ],
+            [
+              "Board and contributor history",
+              "Inspectable work allocation and delivered artifacts",
+              "Integration is not independent peer review"
+            ]
+          ],
+          "widths": [
+            0.3,
+            0.35,
+            0.35
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The immediate beneficiaries are the research team and academic reviewers. The current contribution is an auditable foundation for later analysis. No market-size estimate, deployment adoption, accuracy improvement or device coverage is inferred from the available materials."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Literature review",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Android platform context"
+        },
+        {
+          "type": "p",
+          "text": "AOSP's Binder overview explains the IPC boundary used by Android services. It supplies the correct context for the diagnostic baseline. AOSP's SELinux documentation explains why permissions and enforced access-control policy belong in the interpretation of an observation. Together these sources support explicit context recording rather than assumptions based only on a function name or a nominal platform version. <link href=\"https://source.android.com/docs/core/architecture/ipc/binder-overview\" color=\"#15598B\">[2]</link> <link href=\"https://source.android.com/docs/security/features/selinux\" color=\"#15598B\">[1]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "File-system background"
+        },
+        {
+          "type": "p",
+          "text": "Lee, Sim, Hwang and Cho introduce F2FS as a file system designed around flash-storage characteristics. The paper offers design background and reports experiments on the systems evaluated by its authors. The Linux kernel's ext4 documentation provides a maintained reference for ext4 data structures and algorithms. Neither source demonstrates the configuration, security state or behavior of a team device. <link href=\"https://www.usenix.org/conference/fast15/technical-sessions/presentation/lee\" color=\"#15598B\">[3]</link> <link href=\"https://www.kernel.org/doc/html/latest/filesystems/ext4/\" color=\"#15598B\">[4]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "Data and model reporting"
+        },
+        {
+          "type": "p",
+          "text": "Gebru and colleagues propose documenting dataset motivation, composition, collection, intended uses and limitations. This is directly relevant to the 12-source registry: source hashes identify bytes, while labels and representativeness require separate justification. Mitchell and colleagues propose model cards to communicate intended use, evaluation and limitations. The latter is a future reporting framework here, because the tagged repository does not provide a trained Android selection model. <link href=\"https://arxiv.org/abs/1803.09010v8\" color=\"#15598B\">[6]</link> <link href=\"https://arxiv.org/abs/1810.03993v2\" color=\"#15598B\">[7]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "Development process and related infrastructure"
+        },
+        {
+          "type": "p",
+          "text": "NIST SSDF provides high-level practices for integrating secure development into a software lifecycle. This report uses traceability and preserved evidence as relevant process principles; it does not map every SSDF practice or assert compliance. The NVD overview describes a vulnerability-data resource. The syzkaller repository describes a kernel-testing project, and its report tests provide context for the public diagnostic fixtures used by the team. These resources have different purposes and are not interchangeable benchmarks. <link href=\"https://csrc.nist.gov/pubs/sp/800/218/final\" color=\"#15598B\">[5]</link> <link href=\"https://www.nist.gov/publications/national-vulnerability-database-nvd-overview\" color=\"#15598B\">[8]</link> <link href=\"https://github.com/google/syzkaller/blob/master/README.md\" color=\"#15598B\">[9]</link> <link href=\"https://github.com/google/syzkaller/blob/master/pkg/report/report_test.go\" color=\"#15598B\">[10]</link>"
+        },
+        {
+          "type": "h2",
+          "text": "Synthesis and research gap"
+        },
+        {
+          "type": "p",
+          "text": "The cited work motivates context-aware interpretation, documented data and explicit evaluation boundaries. The present gap is project-specific: the repository still needs independently checked annotations, available prototype outputs, an agreed test environment and a complete evaluation record. The literature review therefore supports preparation and cautious interpretation; it supplies no evidence that the team's intended ML goal has already been achieved."
+        },
+        {
+          "type": "p",
+          "text": "The review uses selected primary sources rather than claiming to be a systematic review. Search coverage, publication completeness and superiority over every related system are not established. Bibliographic links are provided in References."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Existing system comparison",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The comparison concerns documented purpose, inputs and evidence, rather than performance. No common benchmark was executed. NVD and syzkaller provide useful reference points, but neither is presented as a product with the same scope as this student project."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "System / resource",
+            "Documented role",
+            "Relation to this project",
+            "Comparison limit"
+          ],
+          "rows": [
+            [
+              "NVD",
+              "Vulnerability metadata resource <link href=\"https://www.nist.gov/publications/national-vulnerability-database-nvd-overview\" color=\"#15598B\">[8]</link>",
+              "Reference context for structured public records",
+              "Catalogue entries do not prove a team device observation"
+            ],
+            [
+              "syzkaller project",
+              "Kernel-testing infrastructure <link href=\"https://github.com/google/syzkaller/blob/master/README.md\" color=\"#15598B\">[9]</link>",
+              "Upstream context for public diagnostic materials",
+              "Its functionality and results are not the team prototype's results"
+            ],
+            [
+              "syzkaller report fixtures",
+              "Inputs exercised by upstream report tests <link href=\"https://github.com/google/syzkaller/blob/master/pkg/report/report_test.go\" color=\"#15598B\">[10]</link>",
+              "12 pinned public texts are indexed in the team registry",
+              "Fixtures are not newly collected Android-device experiments"
+            ],
+            [
+              "Local binder-diagnostics",
+              "Android source snapshot for local simulation and Binder diagnostics",
+              "Current inspectable prototype",
+              "Post-import build/runtime and multi-filesystem behavior unverified"
+            ],
+            [
+              "Local android-poc-research",
+              "One preserved source/report research module",
+              "Current research artifact collection",
+              "No claim that every imported source builds or runs"
+            ]
+          ],
+          "widths": [
+            0.23,
+            0.25,
+            0.27,
+            0.25
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Resulting positioning"
+        },
+        {
+          "type": "p",
+          "text": "The project's immediate role is to connect a concrete diagnostic source baseline with a transparent research record. It can refer to upstream materials without claiming their original authorship. Its future intelligent component remains a research objective. A credible later comparison must first define a shared task, observation unit, environment and evaluation material; this report does not invent such results."
+        },
+        {
+          "type": "p",
+          "text": "Repository evidence: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/modules/binder-diagnostics/README.md\" color=\"#15598B\">prototype description</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/modules/android-poc-research/README.md\" color=\"#15598B\">research-module description</link> and <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/data/diagnostic-texts/manifest.json\" color=\"#15598B\">diagnostic-text registry</link>."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Technology comparison",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The technologies below are compared against the tasks already visible in the repository. This is a record of the current stack and its tradeoffs, rather than evidence that a new technology was implemented or benchmarked during report preparation."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Technology",
+            "Role in the current version",
+            "Reason / tradeoff",
+            "Verification state"
+          ],
+          "rows": [
+            [
+              "Kotlin + Android resources",
+              "Application UI and diagnostic coordination",
+              "Platform-oriented UI; requires an Android environment",
+              "Source inspected"
+            ],
+            [
+              "JNI + C++17",
+              "Native boundary and diagnostic/simulation implementation",
+              "Connects Kotlin to native code; increases cross-language review needs",
+              "Source snapshot; no new build"
+            ],
+            [
+              "Gradle / CMake",
+              "Android/native build configuration",
+              "Versioned configuration; local SDK/NDK still required",
+              "Configuration observed"
+            ],
+            [
+              "Python standard library",
+              "Manifest/schema and source-integrity checking",
+              "Readable offline checking without executing input texts",
+              "Local integrity check passed"
+            ],
+            [
+              "JSON + CSV manifests",
+              "Source records, indexes and task snapshots",
+              "Machine-readable and reviewable; correctness still needs review",
+              "Published and parsed"
+            ],
+            [
+              "Git + GitHub Issues/Project",
+              "Version, contribution and task records",
+              "Links artifacts to changes; Project visibility is separate",
+              "Public repository; private Project"
+            ],
+            [
+              "Editable SVG / Mermaid",
+              "Architecture and interaction documentation",
+              "Text/vector sources support revision and review",
+              "Sources included with this report"
+            ]
+          ],
+          "widths": [
+            0.21,
+            0.28,
+            0.29,
+            0.22
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Configuration and alternatives"
+        },
+        {
+          "type": "p",
+          "text": "The Android module records Java 17, compileSdk 36, NDK 28.2.13676358 and CMake 3.22.1. These are declared configuration values, not a list of validated devices. Local SDK paths and generated binaries were excluded from the imported snapshot. The source description and configuration files remain the authoritative record."
+        },
+        {
+          "type": "p",
+          "text": "A single-language prototype could reduce interface complexity but would not describe the existing JNI-based baseline accurately. A database could support richer querying later, while the present JSON/CSV manifests keep this small evidence set reviewable. Raster images are useful preserved artifacts; editable SVG and Mermaid are better suited to future diagram revision. These are qualitative tradeoffs with no measured cost or speed claim."
+        },
+        {
+          "type": "p",
+          "text": "No new ML library or candidate algorithm is selected in this report. Model choice remains open until the research question, data and evaluation protocol are agreed. File-system background is recorded through the original F2FS study and official ext4 documentation without asserting deployment support. <link href=\"https://www.usenix.org/conference/fast15/technical-sessions/presentation/lee\" color=\"#15598B\">[3]</link> <link href=\"https://www.kernel.org/doc/html/latest/filesystems/ext4/\" color=\"#15598B\">[4]</link>"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Requirements specification",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The requirements distinguish existing artifacts, documented plans and unverified behavior. Acceptance is based on inspectable evidence. The list is a current-stage research specification; it does not replace a full official university marking rubric."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ID",
+            "Requirement and acceptance evidence",
+            "Current status"
+          ],
+          "rows": [
+            [
+              "FR-01",
+              "Provide prototype source and its module description at the tagged URL",
+              "Source available"
+            ],
+            [
+              "FR-02",
+              "Represent local simulation and diagnostic behavior with distinct status/results in the UI source",
+              "Observed in source; runtime unverified"
+            ],
+            [
+              "FR-03",
+              "Register both research modules with explicit scope and limitations",
+              "Documented"
+            ],
+            [
+              "FR-04",
+              "Preserve the three PoC source groups in one module and publish the 204-file integrity index",
+              "Prepared; import verification recorded"
+            ],
+            [
+              "FR-05",
+              "Record pinned origins, size and SHA-256 for 12 diagnostic texts",
+              "Prepared"
+            ],
+            [
+              "FR-06",
+              "Link individual completed work to real commits/PRs and task IDs",
+              "Prepared"
+            ],
+            [
+              "FR-07",
+              "Deliver one report with 11 ordered sections, contents, editable diagrams and accessible links",
+              "Prepared by this documentation revision"
+            ],
+            [
+              "FR-08",
+              "Provide a working trained Android selection component with independently measured quality",
+              "Future work; not evidenced"
+            ]
+          ],
+          "widths": [
+            0.13,
+            0.61,
+            0.26
+          ],
+          "row_padding": 4
+        },
+        {
+          "type": "h2",
+          "text": "Non-functional and evidence requirements"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ID",
+            "Requirement",
+            "Acceptance boundary"
+          ],
+          "rows": [
+            [
+              "NFR-01",
+              "Traceability",
+              "Record source revision, artifact path, contributor and verification type"
+            ],
+            [
+              "NFR-02",
+              "Integrity",
+              "Retain original source bytes and compare recorded SHA-256 values"
+            ],
+            [
+              "NFR-03",
+              "Privacy and licensing",
+              "Keep applicable attribution; exclude private device dumps and personal raw logs from the public package"
+            ],
+            [
+              "NFR-04",
+              "Reproducible reporting",
+              "Publish editable report/diagram sources and distinguish preserved reports from new runs"
+            ],
+            [
+              "NFR-05",
+              "Accessible review",
+              "Public tagged links and dated task screenshots; separate Project access state"
+            ],
+            [
+              "NFR-06",
+              "Honest uncertainty",
+              "Unavailable values remain unknown; absent runtime or model evidence is not reported as success"
+            ]
+          ],
+          "widths": [
+            0.14,
+            0.27,
+            0.59
+          ],
+          "row_padding": 4
+        },
+        {
+          "type": "p",
+          "text": "AOSP's SELinux description supports the need to record security context when interpreting unavailable observations. Dataset documentation and SSDF support the provenance and integrity requirements. These references explain the principles; satisfying a listed documentation requirement is not a certification of the entire system. <link href=\"https://source.android.com/docs/security/features/selinux\" color=\"#15598B\">[1]</link> <link href=\"https://arxiv.org/abs/1803.09010v8\" color=\"#15598B\">[6]</link> <link href=\"https://csrc.nist.gov/pubs/sp/800/218/final\" color=\"#15598B\">[5]</link>"
+        },
+        {
+          "type": "p",
+          "text": "Open decisions include the detailed target population, actual environment, independent annotation review, complete model-selection policy and the final evaluation material. These are recorded as pending rather than backfilled as completed requirements."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Architecture and diagrams",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Current artifact architecture"
+        },
+        {
+          "type": "p",
+          "text": "The repository contains two independently described source modules, common documentation, research data registries, evidence and planning records. The shared directory is reserved for components with actual reuse; the presence of a directory does not establish a deployed service or integrated ML pipeline."
+        },
+        {
+          "type": "image",
+          "path": "../../diagrams/repository-evidence-map.svg",
+          "caption": "Figure 1. Editable repository/evidence organization. Edges express traceability, not runtime integration.",
+          "max_height": 270,
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/repository-evidence-map.svg"
+        },
+        {
+          "type": "p",
+          "text": "Editable diagram: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/repository-evidence-map.svg\" color=\"#15598B\">SVG source</link>. The earlier repository architecture is also editable as <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/architecture.md\" color=\"#15598B\">Mermaid in architecture.md</link>."
+        },
+        {
+          "type": "h2",
+          "text": "Prototype boundary"
+        },
+        {
+          "type": "p",
+          "text": "The Android module contains a UI/coordinator layer, a Kotlin/native interface and native diagnostic/simulation code. Existing JVM, Android and native test sources are stored alongside it. The research snapshot module is a separate collection of source versions and reports. No implemented connection that turns those collections into a trained selection service is evidenced."
+        },
+        {
+          "type": "image",
+          "path": "../../diagrams/prototype-interaction-flow.svg",
+          "caption": "Figure 2. Source-observed diagnostic interaction. This diagram was prepared for the report; it is not a runtime capture.",
+          "max_height": 245,
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/prototype-interaction-flow.svg"
+        },
+        {
+          "type": "p",
+          "text": "Editable interaction diagram: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/prototype-interaction-flow.svg\" color=\"#15598B\">SVG source</link>. The supplied Assignment 3 <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/research/assets/system-flow.png\" color=\"#15598B\">system-flow PNG</link> remains an original provided figure; its original editable diagram source was not supplied. The new SVGs document the current repository and do not claim to reconstruct that missing original."
+        },
+        {
+          "type": "p",
+          "text": "Binder terminology follows the AOSP IPC description. Its role should remain distinct from the later file-system research question. <link href=\"https://source.android.com/docs/core/architecture/ipc/binder-overview\" color=\"#15598B\">[2]</link>"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "UX and working prototype",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The available prototype is the Android source module <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1/modules/binder-diagnostics\" color=\"#15598B\">binder-diagnostics</link>. Its README describes local simulation and Binder protocol diagnostics. A newly verified installable APK, hosted demonstration and current runtime screenshot are not available in the reviewed package. The link therefore provides an inspectable prototype source, with execution status stated explicitly."
+        },
+        {
+          "type": "h2",
+          "text": "Source-observed interaction"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "UI element / action",
+            "Behavior represented by the source",
+            "Evidence limit"
+          ],
+          "rows": [
+            [
+              "Status and result fields",
+              "Display current operation, progress and textual results",
+              "Not a new observed device session"
+            ],
+            [
+              "Discovery / full simulation",
+              "Initiate the existing local simulation path",
+              "Not an ML-selection result"
+            ],
+            [
+              "Reset / return to simulation",
+              "Reset or switch the diagnostic session back to simulation",
+              "Runtime behavior still needs confirmation"
+            ],
+            [
+              "Binder connection check",
+              "Initiate the existing device-diagnostic action",
+              "IPC observation, not file-system verification"
+            ],
+            [
+              "Busy state / error handling",
+              "Queue work, disable conflicting controls and display an error when appropriate",
+              "Source inspection; no usability or robustness trial"
+            ]
+          ],
+          "widths": [
+            0.27,
+            0.43,
+            0.3
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The relevant source entry points are <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/modules/binder-diagnostics/app/src/main/java/com/example/simulation/MainActivity.kt\" color=\"#15598B\">MainActivity.kt</link> and <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/modules/binder-diagnostics/app/src/main/res/layout/activity_main.xml\" color=\"#15598B\">activity_main.xml</link>. Figure 2 records this interaction for review without presenting a fabricated application screenshot."
+        },
+        {
+          "type": "h2",
+          "text": "Prototype review criteria"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "A reviewer can locate the application source, configuration, module description and test source directories from the tagged module.",
+            "The module description identifies the current simulation/diagnostic scope and build-verification limitation.",
+            "A later demonstration should record its actual code revision, environment, visible outputs and failures. No success screen is inferred from source alone."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Remaining UX evidence"
+        },
+        {
+          "type": "p",
+          "text": "There is no documented user study, accessibility audit, observed task-completion time or fresh installation test in this version. A later prototype review can check whether operation names, busy states, results and error explanations are understood by intended academic reviewers. Those checks remain planned. The source-level interaction diagram and linked module supply the currently accessible prototype material."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Verification and evaluation plan",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Evidence actually available"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Check / record",
+            "Observed result",
+            "Interpretation"
+          ],
+          "rows": [
+            [
+              "Preserved JUnit XML",
+              "24 tests, 0 failures, 0 errors; report dated 15 Oct 2026",
+              "Historical simulation-domain result; not rerun for this report"
+            ],
+            [
+              "Preserved lint report",
+              "0 errors, 1 warning",
+              "Historical static report; not a new clean build"
+            ],
+            [
+              "PoC text import index",
+              "204 source texts with paths, sizes and SHA-256",
+              "Preservation evidence; not proof of execution"
+            ],
+            [
+              "Diagnostic registry",
+              "12 sources, 46,570 bytes; 5 ext4 / 2 F2FS / 5 none reference labels",
+              "Labels imported from Assignment 3; independent review pending"
+            ],
+            [
+              "Offline provenance verifier",
+              "12 records and 2 local artifacts checked; 0 exact duplicates",
+              "Schema/local hash check; no input execution or model test"
+            ],
+            [
+              "Board screenshot PDF",
+              "13 pages inspected for coverage and readability",
+              "Evidence of captured task metadata, not technical effectiveness"
+            ]
+          ],
+          "widths": [
+            0.28,
+            0.35,
+            0.37
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Preserved result files are linked through <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/evidence/stored/manifest.json\" color=\"#15598B\">the stored-evidence manifest</link>. Recent checking used <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/tools/verify_research_sources.py\" color=\"#15598B\">the repository provenance verifier</link> in its local mode. That mode checks records and local artifact integrity; it does not fetch or execute diagnostic inputs."
+        },
+        {
+          "type": "h2",
+          "text": "Reported results that remain unreplicated"
+        },
+        {
+          "type": "p",
+          "text": "The jointly authored Assignment 3 contains parser and text-prototype performance claims. Its corresponding implementation, raw outputs, model and complete split ledger are not in this repository. Those claims remain documentary statements of the supplied report and are not promoted to independently verified project results. This consolidated report does not reconstruct missing trials or confidence intervals."
+        },
+        {
+          "type": "h2",
+          "text": "Next-stage validation gates"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Gate",
+            "Planned evidence",
+            "Decision rule"
+          ],
+          "rows": [
+            [
+              "V1: annotations and data",
+              "Independent label review, preserved disagreements and a versioned source ledger",
+              "Unresolved labels and unavailable sources remain visible"
+            ],
+            [
+              "V2: reproducible text prototype",
+              "Implementation revision, inputs, saved outputs and actual split manifest",
+              "Separate development checks from independent evaluation"
+            ],
+            [
+              "V3: Android prototype",
+              "Recorded environment and fresh build/runtime outcomes",
+              "Report failures and unavailable observations alongside successes"
+            ],
+            [
+              "V4: future model reporting",
+              "Intended use, model identity, evaluation population and limitations",
+              "Do not claim quality without measured evidence"
+            ],
+            [
+              "V5: general report review",
+              "Supervisor discussion record and requirement-to-evidence map",
+              "Resolve missing decisions before asserting final approval"
+            ]
+          ],
+          "widths": [
+            0.23,
+            0.44,
+            0.33
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The existing <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/research/evaluation-methodology.md\" color=\"#15598B\">evaluation methodology</link> separates source integrity, diagnostic classification, record completeness and future system evaluation. Missing data must not silently become a negative outcome; small data sets require absolute counts and clear denominators. Datasheets and model cards support this separation of provenance, intended use and measured performance. <link href=\"https://arxiv.org/abs/1803.09010v8\" color=\"#15598B\">[6]</link> <link href=\"https://arxiv.org/abs/1810.03993v2\" color=\"#15598B\">[7]</link>"
+        },
+        {
+          "type": "p",
+          "text": "This report adds documentation and diagrams only. No new Android/ACK experiment, PoC execution, model training, measured device coverage or effectiveness improvement is claimed."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Project management and risks",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Task board and contribution evidence"
+        },
+        {
+          "type": "p",
+          "text": "The reconciled board contains <b>23 tasks: 12 Done, 8 In Progress and 3 Todo</b>. Completed records are linked to actual artifacts. Partial work remains open. Retrospective tasks register existing deliverables and do not manufacture historical development dates. The 24 October deadline on submission artifacts is a milestone date assigned during registration; unknown future deadlines remain unset."
+        },
+        {
+          "type": "image",
+          "path": "../../../evidence/board/2026-10-24/board-overview.jpg",
+          "caption": "Figure 3. Actual GitHub board capture, 24 October 2026. Full-size task evidence is linked below.",
+          "max_height": 255,
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/board-and-tasks-2026-10-24.pdf"
+        },
+        {
+          "type": "p",
+          "text": "The Project itself is private. The <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues\" color=\"#15598B\">public issues</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/board.md\" color=\"#15598B\">23-task table</link> and <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/board-and-tasks-2026-10-24.pdf\" color=\"#15598B\">full-size board/task PDF</link> remain publicly accessible. The latter shows assignees, priorities, deadlines, statuses and completed examples with acceptance criteria and commit/PR links."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Member and responsibility",
+            "Completed deliverables",
+            "Direct evidence"
+          ],
+          "rows": [
+            [
+              "Tsybus Nikita Valentinovich; technical lead",
+              "Diagnostic baseline, monorepo organization, research import and submission documentation",
+              "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/8\" color=\"#15598B\">#8</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/13\" color=\"#15598B\">#13</link>-<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/20\" color=\"#15598B\">#20</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202\" color=\"#15598B\">b23517a</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d\" color=\"#15598B\">9b84849</link>"
+            ],
+            [
+              "Kassymgali Bakytzhan Zhenisuly; data/methodology and presentation",
+              "Source registry, provenance verification, data/evaluation documents and repository navigation",
+              "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/23\" color=\"#15598B\">#23</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/24\" color=\"#15598B\">#24</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/pull/21\" color=\"#15598B\">PR #21</link>, <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/pull/22\" color=\"#15598B\">PR #22</link>"
+            ],
+            [
+              "Galidullaeva Aliya Khantanirovna; analytical documentation",
+              "Two-page analytical summary of goal, modules, current evidence and limitations",
+              "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/issues/25\" color=\"#15598B\">#25</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714\" color=\"#15598B\">eb6dc9e</link>"
+            ]
+          ],
+          "widths": [
+            0.31,
+            0.41,
+            0.28
+          ]
+        },
+        {
+          "type": "p",
+          "text": "No YouTrack system was used. These are GitHub issue identifiers. The joint report retains shared authorship; an import commit does not establish original authorship of every pre-existing file. PR integration is evidenced, while independent reviews and review-driven revisions are not inferred."
+        },
+        {
+          "type": "h2",
+          "text": "Risk register and next actions"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Risk",
+            "Consequence",
+            "Mitigation / next action",
+            "Owner"
+          ],
+          "rows": [
+            [
+              "Scope drift between official title and working goal",
+              "Unclear acceptance standard",
+              "Record clarified scope with the supervisor",
+              "Nikita"
+            ],
+            [
+              "Unverified runtime and missing prototype outputs",
+              "Demonstration or results cannot be reproduced",
+              "Obtain environment and actual run records",
+              "Nikita"
+            ],
+            [
+              "Small corpus and unreviewed labels",
+              "Unsupported generalization",
+              "Review labels and record lineage/split before evaluation",
+              "Bakytzhan"
+            ],
+            [
+              "Incomplete report review or verbal-only feedback",
+              "Academic decisions lack a written record",
+              "Confirm discussion points and revise documentation",
+              "Nikita with team"
+            ],
+            [
+              "Private Project or changing tag",
+              "Committee sees inconsistent evidence",
+              "Keep public snapshots and use one frozen submission tag",
+              "Nikita"
+            ],
+            [
+              "Sensitive raw logs / source attribution",
+              "Inappropriate public disclosure or attribution",
+              "Retain exclusions, origin records and license notices",
+              "All members"
+            ]
+          ],
+          "widths": [
+            0.23,
+            0.24,
+            0.38,
+            0.15
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The next milestone is an agreed, inspectable research and evaluation package with fresh evidence where needed. The owners above describe next-stage responsibility; they are not claims that those future actions have already been completed. Detailed future dates and effort estimates are not fabricated. <link href=\"https://csrc.nist.gov/pubs/sp/800/218/final\" color=\"#15598B\">[5]</link>"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Supervisor feedback",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Recorded status"
+        },
+        {
+          "type": "p",
+          "text": "Supervisor: <b>Zhaksylyk Kozhakhmet</b>. On 24 October 2026, the team representative reported that the supervisor had orally given agreement and confirmation in discussion. The representative did not supply exact wording, a meeting date or a written message."
+        },
+        {
+          "type": "p",
+          "text": "This is a record of the representative's account of verbal feedback. The scope of each confirmation is not reconstructed. It is not presented as a quotation, signed approval, independent review of the experimental results or formal acceptance of every item in this report."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Feedback item",
+            "Available record",
+            "Status / follow-up"
+          ],
+          "rows": [
+            [
+              "General verbal agreement / confirmation",
+              "Representative's statement supplied during report preparation",
+              "Recorded as reported verbal feedback"
+            ],
+            [
+              "Exact comments and meeting date",
+              "Not supplied",
+              "Request a brief dated confirmation when available"
+            ],
+            [
+              "Detailed scope and evaluation decisions",
+              "No decision-by-decision record supplied",
+              "Confirm the working goal, environment and evidence expectations"
+            ],
+            [
+              "Revisions resulting from specific feedback",
+              "No precise comment-to-change mapping available",
+              "Do not assign existing commits to invented review requests"
+            ]
+          ],
+          "widths": [
+            0.29,
+            0.35,
+            0.36
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Agenda for the next documented consultation"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Confirm how the official generation title relates to the clarified selection-oriented research goal.",
+            "Agree the current prototype demonstration and the evidence needed for a fresh build/runtime claim.",
+            "Review the data/methodology package, remaining annotation questions and evaluation boundaries.",
+            "Record specific comments, team actions and resulting revisions with dates and links."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The team can update this section when a dated feedback record is available. The presence of this section fulfils the supplied outline's ordering, while the completeness of supervisor evidence remains visible rather than replaced with invented quotations."
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "1",
+      "text": "Android Open Source Project. Security-Enhanced Linux in Android. Updated 2026-09-30. Accessed 24 October 2026.",
+      "url": "https://source.android.com/docs/security/features/selinux"
+    },
+    {
+      "id": "2",
+      "text": "Android Open Source Project. Binder overview. Updated 2026-10-09. Accessed 24 October 2026.",
+      "url": "https://source.android.com/docs/core/architecture/ipc/binder-overview"
+    },
+    {
+      "id": "3",
+      "text": "Changman Lee; Dongho Sim; Joo-Young Hwang; Sangyeun Cho. F2FS: A New File System for Flash Storage. 2015-02. 13th USENIX Conference on File and Storage Technologies (FAST 15), pp. 273-286. Accessed 24 October 2026.",
+      "url": "https://www.usenix.org/conference/fast15/technical-sessions/presentation/lee"
+    },
+    {
+      "id": "4",
+      "text": "The Linux kernel development community. ext4 Data Structures and Algorithms. n.d. Accessed 24 October 2026.",
+      "url": "https://www.kernel.org/doc/html/latest/filesystems/ext4/"
+    },
+    {
+      "id": "5",
+      "text": "Murugiah Souppaya; Karen Scarfone; Donna Dodson. Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities. 2022-02. NIST Special Publication 800-218. Accessed 24 October 2026.",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final"
+    },
+    {
+      "id": "6",
+      "text": "Timnit Gebru; Jamie Morgenstern; Briana Vecchione; Jennifer Wortman Vaughan; Hanna Wallach; Hal Daumé III; Kate Crawford. Datasheets for Datasets. 2021-12. Communications of the ACM, 64(12), pp. 86-92. Accessed 24 October 2026.",
+      "url": "https://arxiv.org/abs/1803.09010v8"
+    },
+    {
+      "id": "7",
+      "text": "Margaret Mitchell; Simone Wu; Andrew Zaldivar; Parker Barnes; Lucy Vasserman; Ben Hutchinson; Elena Spitzer; Inioluwa Deborah Raji; Timnit Gebru. Model Cards for Model Reporting. 2019-01. Conference on Fairness, Accountability, and Transparency (FAT* '19). Accessed 24 October 2026.",
+      "url": "https://arxiv.org/abs/1810.03993v2"
+    },
+    {
+      "id": "8",
+      "text": "Harold Booth; Doug Rike; Gregory A. Witte. The National Vulnerability Database (NVD): Overview. 2013-12-18. NIST ITL Bulletin. Accessed 24 October 2026.",
+      "url": "https://www.nist.gov/publications/national-vulnerability-database-nvd-overview"
+    },
+    {
+      "id": "9",
+      "text": "The syzkaller project authors. syzkaller - kernel fuzzer (README). n.d. Accessed 24 October 2026.",
+      "url": "https://github.com/google/syzkaller/blob/master/README.md"
+    },
+    {
+      "id": "10",
+      "text": "The syzkaller project authors. syzkaller report parser tests and test-data loading. n.d. Accessed 24 October 2026.",
+      "url": "https://github.com/google/syzkaller/blob/master/pkg/report/report_test.go"
+    }
+  ],
+  "appendix": {
+    "title": "Appendix A. Evidence map for the committee",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "All repository links below use the submission tag. The reviewed research/evidence baseline is <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/a50c495b30366b298fa8c7990772096c512773f9\" color=\"#15598B\">a50c495</link>. The tag is refreshed once to include this consolidated report, its editable sources and navigation updates. Report preparation does not alter the imported module sources."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Report area",
+          "Artifact / direct tagged link",
+          "What it establishes"
+        ],
+        "rows": [
+          [
+            "1-2: scope and relevance",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/project-scope.md\" color=\"#15598B\">Project scope</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/README.md\" color=\"#15598B\">README</link>",
+            "Official title, clarified goal and current state"
+          ],
+          [
+            "3-5: research and comparison",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/research/data-preparation.md\" color=\"#15598B\">Data preparation</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/sources/primary-sources.json\" color=\"#15598B\">Reference source register</link>",
+            "Provenance of the documented materials and primary references"
+          ],
+          [
+            "6: requirements and status",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/project.json\" color=\"#15598B\">Project metadata</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/planning/issues.json\" color=\"#15598B\">Task specification</link>",
+            "Prepared artifacts, pending decisions and explicit acceptance criteria"
+          ],
+          [
+            "7: editable architecture",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/repository-evidence-map.svg\" color=\"#15598B\">Repository SVG</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/diagrams/prototype-interaction-flow.svg\" color=\"#15598B\">Interaction SVG</link>",
+            "Editable report diagrams; documentation rather than runtime proof"
+          ],
+          [
+            "8: prototype",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1/modules/binder-diagnostics\" color=\"#15598B\">Prototype source</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/modules/binder-diagnostics/README.md\" color=\"#15598B\">Prototype README</link>",
+            "Accessible source and build-verification boundary"
+          ],
+          [
+            "9: preserved tests",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/evidence/stored/junit-unit-tests.xml\" color=\"#15598B\">JUnit XML</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/evidence/stored/lint-results-debug.txt\" color=\"#15598B\">Lint text</link>",
+            "Saved historical reports, not new runs"
+          ],
+          [
+            "9: source integrity",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/evidence/imports/android-poc-research/FILE_INDEX.csv\" color=\"#15598B\">204-file index</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/data/diagnostic-texts/manifest.json\" color=\"#15598B\">12-source registry</link>",
+            "Source identities, sizes and recorded hashes"
+          ],
+          [
+            "10: board and team",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/board-and-tasks-2026-10-24.pdf\" color=\"#15598B\">Board/task PDF</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/team.md\" color=\"#15598B\">Team record</link>",
+            "Captured task metadata and commit/PR-backed contributions"
+          ],
+          [
+            "11: supervisor feedback",
+            "Section 11 of this report",
+            "Reported verbal agreement, with missing written details identified"
+          ],
+          [
+            "Editable report package",
+            "<link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/sources/consolidated-report-content.json\" color=\"#15598B\">Report content JSON</link>; <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/sources/build_consolidated_report.py\" color=\"#15598B\">PDF builder</link>",
+            "Reviewable text, diagram references and reproducible report construction"
+          ]
+        ],
+        "widths": [
+          0.22,
+          0.4,
+          0.38
+        ],
+        "row_padding": 5
+      },
+      {
+        "type": "h2",
+        "text": "Repository version and accessible materials"
+      },
+      {
+        "type": "p",
+        "text": "Repository: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research\" color=\"#15598B\">https://github.com/Nikeka-git/android-fs-ml-research</link>.<br/>Submission version: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1\" color=\"#15598B\">https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1</link>.<br/>Original reviewed baseline: <link href=\"https://github.com/Nikeka-git/android-fs-ml-research/commit/a50c495b30366b298fa8c7990772096c512773f9\" color=\"#15598B\">a50c495</link>."
+      },
+      {
+        "type": "p",
+        "text": "Supporting source snapshots, the joint Assignment 3 and the analytical summary retain their original scope. Historical reports dated 15 October are preserved for traceability. They should not be mistaken for fresh measurements or a replacement for the consolidated current report."
+      },
+      {
+        "type": "h2",
+        "text": "Submission checklist"
+      },
+      {
+        "type": "bullets",
+        "items": [
+          "Eleven sections follow the order supplied in the example, with a table of contents and References.",
+          "The filename uses group SE-2421 and representative surname Tsybus.",
+          "Prototype source, editable SVG/Mermaid diagrams and supporting evidence are linked.",
+          "Verbal supervisor feedback is attributed to the representative; unavailable details remain explicit.",
+          "The report and editable sources are published together in the refreshed prob-period-1 version."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+<rect width="1000" height="640" fill="white"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8" fill="#526a7a"/></marker></defs>
+<text x="35" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#183c59">Diagnostic prototype: source-observed interaction flow</text>
+<line x1="310" y1="165" x2="360" y2="165" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="640" y1="165" x2="690" y2="165" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="830" y1="230" x2="640" y2="370" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="360" y1="420" x2="310" y2="420" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="30" y="100" width="280" height="130" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="48" y="130" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">1. Open screen</text>
+<text x="48" y="158" font-family="Arial" font-size="18" fill="#283d4c">Status, operation</text>
+<text x="48" y="181" font-family="Arial" font-size="18" fill="#283d4c">controls, progress and</text>
+<text x="48" y="204" font-family="Arial" font-size="18" fill="#283d4c">results</text>
+<rect x="360" y="100" width="280" height="130" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="378" y="130" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">2. Choose operation</text>
+<text x="378" y="158" font-family="Arial" font-size="18" fill="#283d4c">Local simulation, reset</text>
+<text x="378" y="181" font-family="Arial" font-size="18" fill="#283d4c">or Binder connection</text>
+<text x="378" y="204" font-family="Arial" font-size="18" fill="#283d4c">check</text>
+<rect x="690" y="100" width="280" height="130" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="708" y="130" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">3. Background work</text>
+<text x="708" y="158" font-family="Arial" font-size="18" fill="#283d4c">Queue operation; disable</text>
+<text x="708" y="181" font-family="Arial" font-size="18" fill="#283d4c">conflicting controls</text>
+<rect x="360" y="350" width="280" height="140" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="378" y="380" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">4. Present outcome</text>
+<text x="378" y="408" font-family="Arial" font-size="18" fill="#283d4c">Update status/results;</text>
+<text x="378" y="431" font-family="Arial" font-size="18" fill="#283d4c">show error when operation</text>
+<text x="378" y="454" font-family="Arial" font-size="18" fill="#283d4c">fails</text>
+<rect x="30" y="350" width="280" height="140" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="48" y="380" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">5. Continue or reset</text>
+<text x="48" y="408" font-family="Arial" font-size="18" fill="#283d4c">Return to simulation or</text>
+<text x="48" y="431" font-family="Arial" font-size="18" fill="#283d4c">inspect the next result</text>
+<text x="35" y="592" font-family="Arial" font-size="16" fill="#56616b">This is an editable interpretation of MainActivity source. It is not a screenshot, usability study or evidence</text>
+<text x="35" y="615" font-family="Arial" font-size="16" fill="#56616b">of a new device run.</text>
+</svg>

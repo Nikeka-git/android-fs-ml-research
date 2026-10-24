@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
   "language": "ru",
-  "scaffold_status": "Публичный монорепозиторий с двумя снимками, материалами первого апробационного периода, пакетом подготовки данных Kerey404 и аналитическим PDF, добавленным aliiyaaa; взаимные ревью требуют подтверждения",
+  "scaffold_status": "Публичный монорепозиторий с двумя снимками, единым отчётом первого апробационного периода, материалами доски, пакетом данных Kerey404 и аналитическим PDF aliiyaaa; независимые ревью и полный официальный критерий требуют подтверждения",
   "repository_layout": {
     "type": "monorepo",
     "module_catalog": "modules/catalog.json",
@@ -74,7 +74,18 @@
   "supervisor": {
     "name": "Zhaksylyk Kozhakhmet",
     "account": null,
-    "contact": null
+    "contact": null,
+    "feedback": {
+      "status": "reported_verbal_agreement_and_confirmation",
+      "reported_by": "team_representative",
+      "reported_on": "2026-10-24",
+      "meeting_date": null,
+      "exact_wording_available": false,
+      "written_record_available": false,
+      "scope_of_each_confirmation_recorded": false,
+      "formal_written_report_approval_claimed": false,
+      "report_section": 11
+    }
   },
   "team": [
     {
@@ -127,19 +138,27 @@
     "repository": "https://github.com/Nikeka-git/android-fs-ml-research",
     "board": "https://github.com/users/Nikeka-git/projects/1",
     "official_requirements": null,
-    "report_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/aprobation-report-draft.pdf",
-    "report_editable_html": "docs/report/aprobation-report-draft.html",
+    "report_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/SE-2421_Tsybus_ProbPeriod1.pdf",
     "board_screenshots_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/board-and-tasks-2026-10-24.pdf",
     "submission_form": "https://forms.cloud.microsoft/r/Yy6AXT5pe3",
     "period_1_version": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
-    "period_1_answers": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/prob-period-1.md"
+    "period_1_answers": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/prob-period-1.md",
+    "historical_report_editable_html": "docs/report/aprobation-report-draft.html",
+    "report_editable_json": "docs/report/sources/consolidated-report-content.json",
+    "report_pdf_builder": "docs/report/sources/build_consolidated_report.py",
+    "report_primary_source_register": "docs/report/sources/primary-sources.json",
+    "report_editable_diagrams": [
+      "docs/diagrams/repository-evidence-map.svg",
+      "docs/diagrams/prototype-interaction-flow.svg",
+      "docs/architecture.md"
+    ]
   },
   "submission": {
     "deadline_as_announced": "24 октября 2026 года, до 18:00",
     "deadline_timezone": null,
     "representative_member_id": null,
     "github_acceptance_confirmed": true,
-    "report_status": "Предварительный черновик; полнота по официальным требованиям не подтверждена",
+    "report_status": "Consolidated 19-page report prepared from supplied 11-section example; official rubric full confirmation pending",
     "official_report_sections_received": false,
     "team_details_complete": true,
     "access_verified": false,
@@ -150,15 +169,38 @@
       "tag": "prob-period-1",
       "version_url": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
       "answers": "docs/prob-period-1.md",
-      "scope": "Предоставленные пункты 4–7 формы",
+      "scope": "Provided form items 4–7, board/task screenshot requirement and consolidated report following supplied eleven-section example",
       "youtrack_used": false,
       "individual_contributions_complete": true,
       "updated_on": "2026-10-24",
       "research_materials_source_commit": "9bb991a5e37646c189b30344ba347cd71bdc6e59",
-      "administrative_materials": "Updated contribution records, task reconciliation and board screenshot PDF are included by the subsequent submission-preparation commit",
-      "new_builds_or_experiments_run": false
+      "administrative_materials": "Updated team contribution records, task reconciliation, board screenshots, consolidated report and editable report/diagram sources included by submission-preparation revisions",
+      "new_builds_or_experiments_run": false,
+      "report_baseline_commit": "a50c495b30366b298fa8c7990772096c512773f9"
     },
-    "repository_access_verified": true
+    "repository_access_verified": true,
+    "report_outline_received": true,
+    "report_outline_source": "User-supplied peer table-of-contents screenshot: eleven ordered sections, References and Appendix A",
+    "complete_official_marking_rubric_confirmed": false,
+    "consolidated_report": {
+      "path": "docs/report/SE-2421_Tsybus_ProbPeriod1.pdf",
+      "prepared_on": "2026-10-24",
+      "pages": 19,
+      "section_count": 11,
+      "structure_source": "supplied_peer_example",
+      "table_of_contents": true,
+      "research_and_evidence_baseline_commit": "a50c495b30366b298fa8c7990772096c512773f9",
+      "editable_content": "docs/report/sources/consolidated-report-content.json",
+      "builder": "docs/report/sources/build_consolidated_report.py",
+      "primary_source_register": "docs/report/sources/primary-sources.json",
+      "editable_diagrams": [
+        "docs/diagrams/repository-evidence-map.svg",
+        "docs/diagrams/prototype-interaction-flow.svg"
+      ],
+      "official_rubric_full_confirmation_pending": true,
+      "supervisor_feedback": "Representative-reported verbal agreement; meeting date, exact wording and written record unavailable",
+      "new_builds_or_experiments_run": false
+    }
   },
   "research_decisions": {
     "file_systems": null,
@@ -168,9 +210,11 @@
     "evaluation_protocol": null
   },
   "reports_status": {
-    "report": "Historical preliminary draft dated 2026-10-15; current stage described in docs/prob-period-1.md",
+    "report": "Consolidated 19-page report dated 2026-10-24 follows supplied eleven-section example; historical preliminary draft dated 2026-10-15 is retained separately; complete official rubric confirmation pending",
     "board_screenshots": "Current board and task screenshots dated 2026-10-24 in docs/report/board-and-tasks-2026-10-24.pdf; older 2026-10-15 screenshots retained separately",
-    "android_tests_rerun": false
+    "android_tests_rerun": false,
+    "editable_sources": "Report JSON, PDF builder, primary-source register, editable SVG diagrams and existing Mermaid repository diagram",
+    "supervisor_feedback": "Verbal agreement and confirmation reported by representative on 2026-10-24; no exact wording, meeting date or written approval supplied"
   },
   "imported_research_snapshots": [
     {

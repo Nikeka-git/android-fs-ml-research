@@ -1,0 +1,97 @@
+{
+  "created_on": "2026-10-24",
+  "kind": "consolidated-probation-report",
+  "tag": "prob-period-1",
+  "research_evidence_baseline": "a50c495b30366b298fa8c7990772096c512773f9",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Project proposal"
+    },
+    {
+      "number": 2,
+      "title": "Evidence of relevance"
+    },
+    {
+      "number": 3,
+      "title": "Literature review"
+    },
+    {
+      "number": 4,
+      "title": "Existing system comparison"
+    },
+    {
+      "number": 5,
+      "title": "Technology comparison"
+    },
+    {
+      "number": 6,
+      "title": "Requirements specification"
+    },
+    {
+      "number": 7,
+      "title": "Architecture and diagrams"
+    },
+    {
+      "number": 8,
+      "title": "UX and working prototype"
+    },
+    {
+      "number": 9,
+      "title": "Verification and evaluation plan"
+    },
+    {
+      "number": 10,
+      "title": "Project management and risks"
+    },
+    {
+      "number": 11,
+      "title": "Supervisor feedback"
+    }
+  ],
+  "pages": 19,
+  "table_of_contents": true,
+  "external_link_count": 55,
+  "internal_link_count": 80,
+  "all_report_fonts_embedded": true,
+  "visual_review": "All rendered pages reviewed; pagination and diagram/table readability checked.",
+  "supervisor_feedback": "Representative-reported verbal agreement and confirmation; exact words, meeting date and written record not supplied.",
+  "official_outline_status": "Eleven-section example supplied by representative; complete official rubric not independently confirmed.",
+  "files": [
+    {
+      "path": "docs/report/SE-2421_Tsybus_ProbPeriod1.pdf",
+      "bytes": 327108,
+      "sha256": "9eb9bb4e4885c909192aa4969414f18d2e86eab7b623fdbedb2c214320e43244"
+    },
+    {
+      "path": "docs/report/sources/consolidated-report-content.json",
+      "bytes": 59793,
+      "sha256": "09593c1954d1b67ece5cb3cc7fe8727a8ab3cc8280f5b063ae704aa45e13c073"
+    },
+    {
+      "path": "docs/report/sources/build_consolidated_report.py",
+      "bytes": 21414,
+      "sha256": "7b221021bb4d1c40c2be422cfaad09483d7e49fedbfd5148e8ecd264b50a2e95"
+    },
+    {
+      "path": "docs/report/sources/primary-sources.json",
+      "bytes": 11393,
+      "sha256": "d1b15fae69395cd1e237bd158a5c3e5bd36509c7597386c80069880f280cd84a"
+    },
+    {
+      "path": "docs/report/sources/README.md",
+      "bytes": 1638,
+      "sha256": "45e9b3c560e440134a41c55a06c549e1c8d4483e9f2cce0223abcac8c50cdfa5"
+    },
+    {
+      "path": "docs/diagrams/repository-evidence-map.svg",
+      "bytes": 3214,
+      "sha256": "ed90a2569823656bd02d8c274a4a4a65978c9341604d1be0aa7e8053157dd0de"
+    },
+    {
+      "path": "docs/diagrams/prototype-interaction-flow.svg",
+      "bytes": 3545,
+      "sha256": "053646253e7bdaabcd947362be4c61d5acd321abcb51d32288155ae7e200c0c7"
+    }
+  ]
+}

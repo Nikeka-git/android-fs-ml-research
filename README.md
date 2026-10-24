@@ -33,6 +33,7 @@
 | **Изучить данные и методику** | [Подготовка данных](docs/research/data-preparation.md) → [методика оценки](docs/research/evaluation-methodology.md) |
 | **Проверить индивидуальный вклад** | [Команда и подтверждения](docs/team.md) → [вклад Kerey404, PR №21](https://github.com/Nikeka-git/android-fs-ml-research/pull/21) |
 | **Найти материалы для защиты** | [Навигатор по отчётам](docs/README.md#материалы-для-защиты) → [апробационная версия](docs/submission.md) |
+| **Открыть единый отчёт** | [SE-2421_Tsybus_ProbPeriod1.pdf](docs/report/SE-2421_Tsybus_ProbPeriod1.pdf) → [редактируемый текст JSON](docs/report/sources/consolidated-report-content.json) |
 
 ## О проекте
 
@@ -117,6 +118,7 @@ android-fs-ml-research/
 - [`main`](https://github.com/Nikeka-git/android-fs-ml-research/tree/main) содержит текущие материалы.
 - [`prob-period-1`](https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1) — версия сдачи, обновлённая 24 октября 2026 года с вкладом участников и актуальными материалами доски. Предыдущий снимок доступен по [коммиту df9da6c](https://github.com/Nikeka-git/android-fs-ml-research/commit/df9da6cbbc35fef1b0b9142b225e5ca6808fec5d).
 - [Ответы на пункты 4–7](docs/prob-period-1.md) и [комплект сдачи](docs/submission.md) соответствуют обновлённой версии.
+- [Единый отчёт](docs/report/SE-2421_Tsybus_ProbPeriod1.pdf) содержит 11 разделов в порядке предоставленного примера; полный официальный критерий оценивания отдельно не подтверждён. Доступны [текст JSON](docs/report/sources/consolidated-report-content.json), [схема репозитория SVG](docs/diagrams/repository-evidence-map.svg) и [схема взаимодействия прототипа SVG](docs/diagrams/prototype-interaction-flow.svg). Сообщение об устном согласии руководителя отмечено как сообщение представителя, без формального письменного одобрения.
 - [Текущий PDF доски и задач](docs/report/board-and-tasks-2026-10-24.pdf) датирован 24 октября. [Сохранённые общие отчёты](docs/report/README.md) и прежние снимки доски относятся к 15 октября 2026 года.
 - [JUnit XML](evidence/stored/junit-unit-tests.xml) содержит 24 теста без ошибок; [lint-отчёт](evidence/stored/lint-results-debug.txt) — 0 ошибок и 1 предупреждение. Эти прежние проверки не перезапускались; JVM-тесты используют симуляцию.
 - Исходники, модель и журналы текстового прототипа, описанного в Assignment 3, пока не предоставлены. Готовый обучающий набор и подтверждённое качество выбора эксплойта в репозитории не представлены.

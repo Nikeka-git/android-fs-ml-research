@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+<rect width="1000" height="640" fill="white"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8" fill="#526a7a"/></marker></defs>
+<text x="35" y="45" font-family="Arial" font-size="25" font-weight="bold" fill="#183c59">Repository and evidence organization</text>
+<line x1="410" y1="170" x2="250" y2="240" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="590" y1="170" x2="750" y2="240" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="250" y1="360" x2="250" y2="430" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="750" y1="360" x2="750" y2="430" stroke="#526a7a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="310" y="80" width="380" height="90" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="328" y="110" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">Public tagged repository</text>
+<text x="328" y="138" font-family="Arial" font-size="18" fill="#283d4c">prob-period-1 submission snapshot</text>
+<rect x="30" y="240" width="440" height="120" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="48" y="270" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">Source snapshots</text>
+<text x="48" y="298" font-family="Arial" font-size="18" fill="#283d4c">binder-diagnostics and android-poc-</text>
+<text x="48" y="321" font-family="Arial" font-size="18" fill="#283d4c">research</text>
+<rect x="530" y="240" width="440" height="120" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="548" y="270" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">Research documentation</text>
+<text x="548" y="298" font-family="Arial" font-size="18" fill="#283d4c">scope, data preparation, evaluation and</text>
+<text x="548" y="321" font-family="Arial" font-size="18" fill="#283d4c">team records</text>
+<rect x="30" y="430" width="440" height="115" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="48" y="460" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">Provenance and integrity</text>
+<text x="48" y="488" font-family="Arial" font-size="18" fill="#283d4c">source manifests, SHA-256 indexes,</text>
+<text x="48" y="511" font-family="Arial" font-size="18" fill="#283d4c">preserved reports</text>
+<rect x="530" y="430" width="440" height="115" rx="9" fill="#f0f4f7" stroke="#8296a5" stroke-width="1.5"/>
+<text x="548" y="460" font-family="Arial" font-size="21" font-weight="bold" fill="#183c59">Task and submission records</text>
+<text x="548" y="488" font-family="Arial" font-size="18" fill="#283d4c">GitHub issues, dated board screenshots and</text>
+<text x="548" y="511" font-family="Arial" font-size="18" fill="#283d4c">report</text>
+<text x="35" y="592" font-family="Arial" font-size="16" fill="#56616b">Edges show document organization and traceability. They do not represent implemented runtime integration</text>
+<text x="35" y="615" font-family="Arial" font-size="16" fill="#56616b">between the two modules.</text>
+</svg>

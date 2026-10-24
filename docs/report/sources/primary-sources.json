@@ -1,0 +1,155 @@
+{
+  "accessed_date": "2026-10-24",
+  "purpose": "Primary sources for a concise probationary-stage literature review and related-system comparison; source claims do not establish this project's implementation or results.",
+  "sources": [
+    {
+      "id": "ANDROID_SECURITY",
+      "title": "Security-Enhanced Linux in Android",
+      "authors": ["Android Open Source Project"],
+      "date": "2026-09-30",
+      "date_type": "page last updated",
+      "url": "https://source.android.com/docs/security/features/selinux",
+      "type": "official documentation",
+      "notes": "AOSP documents mandatory access control across Android processes, including privileged processes, and distinguishes enforcing and permissive modes. This supports recording observed security context and interpreting denied diagnostic operations without treating a denial as a defect or evidence of a vulnerability.",
+      "report_use": "Sections 2, 3 and 6: security context, permissions and honest handling of unavailable observations."
+    },
+    {
+      "id": "BINDER",
+      "title": "Binder overview",
+      "authors": ["Android Open Source Project"],
+      "date": "2026-10-09",
+      "date_type": "page last updated",
+      "url": "https://source.android.com/docs/core/architecture/ipc/binder-overview",
+      "type": "official documentation",
+      "notes": "Binder is Android's interprocess communication system, connecting client and server processes through proxy/node interfaces and a kernel driver. Binder diagnostics therefore concern IPC behavior and must not be presented as measurements of a file-system implementation.",
+      "report_use": "Sections 3 and 7: terminology and separation of IPC diagnostics from file-system research."
+    },
+    {
+      "id": "F2FS",
+      "title": "F2FS: A New File System for Flash Storage",
+      "authors": ["Changman Lee", "Dongho Sim", "Joo-Young Hwang", "Sangyeun Cho"],
+      "date": "2015-02",
+      "date_type": "conference publication",
+      "venue": "13th USENIX Conference on File and Storage Technologies (FAST 15), pp. 273-286",
+      "url": "https://www.usenix.org/conference/fast15/technical-sessions/presentation/lee",
+      "pdf_url": "https://www.usenix.org/system/files/conference/fast15/fast15-paper-lee.pdf",
+      "type": "original research paper",
+      "notes": "The paper introduces F2FS as a Linux file system designed around flash-storage characteristics and describes its design and original experiments. Its historical benchmark results are evidence about that paper's evaluated systems, not performance measurements of this repository or current Android devices.",
+      "report_use": "Sections 3 and 5: file-system background and rationale for treating file-system identity and storage context separately."
+    },
+    {
+      "id": "EXT4",
+      "title": "ext4 Data Structures and Algorithms",
+      "authors": ["The Linux kernel development community"],
+      "date": null,
+      "date_type": "continuously maintained documentation; cite access date",
+      "url": "https://www.kernel.org/doc/html/latest/filesystems/ext4/",
+      "supporting_url": "https://www.kernel.org/doc/html/latest/filesystems/ext4/overview.html",
+      "type": "official documentation",
+      "notes": "The kernel documentation describes ext4 structures including block groups, inodes, allocation and the jbd2 journal. It supplies technical vocabulary for a file-system study; it does not show which filesystem or features are active on a particular device.",
+      "report_use": "Sections 3 and 5: ext4 background and limits of inferring deployed behavior from documentation alone."
+    },
+    {
+      "id": "SSDF",
+      "title": "Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities",
+      "authors": ["Murugiah Souppaya", "Karen Scarfone", "Donna Dodson"],
+      "date": "2022-02",
+      "date_type": "publication",
+      "venue": "NIST Special Publication 800-218",
+      "doi": "10.6028/NIST.SP.800-218",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "type": "official standard guidance",
+      "notes": "SSDF sets out high-level secure software development practices that can be integrated into an existing lifecycle. It supports a documented process for preserving software integrity, verifying changes and responding to vulnerabilities; citing it does not certify that every SSDF practice has been implemented.",
+      "report_use": "Sections 6, 9 and 10: change traceability, evidence preservation and development risk management."
+    },
+    {
+      "id": "DATASHEETS",
+      "title": "Datasheets for Datasets",
+      "authors": ["Timnit Gebru", "Jamie Morgenstern", "Briana Vecchione", "Jennifer Wortman Vaughan", "Hanna Wallach", "Hal Daumé III", "Kate Crawford"],
+      "date": "2021-12",
+      "date_type": "published version; first preprint 23 March 2018",
+      "venue": "Communications of the ACM, 64(12), pp. 86-92",
+      "doi": "10.1145/3458723",
+      "url": "https://arxiv.org/abs/1803.09010v8",
+      "type": "research paper, author-hosted preprint of published version",
+      "notes": "The authors propose dataset documentation covering motivation, composition, collection and intended uses. This supports documenting provenance and limitations of an imported diagnostic corpus before using it for future ML evaluation; an imported corpus alone is not a validated training dataset.",
+      "report_use": "Sections 3, 6 and 9: provenance, corpus documentation and limitations."
+    },
+    {
+      "id": "MODELCARDS",
+      "title": "Model Cards for Model Reporting",
+      "authors": ["Margaret Mitchell", "Simone Wu", "Andrew Zaldivar", "Parker Barnes", "Lucy Vasserman", "Ben Hutchinson", "Elena Spitzer", "Inioluwa Deborah Raji", "Timnit Gebru"],
+      "date": "2019-01",
+      "date_type": "conference publication; first preprint 5 October 2018, revised 14 January 2019",
+      "venue": "Conference on Fairness, Accountability, and Transparency (FAT* '19)",
+      "doi": "10.1145/3287560.3287596",
+      "url": "https://arxiv.org/abs/1810.03993v2",
+      "type": "original research paper",
+      "notes": "Model cards document intended use, evaluation procedures, measured performance and limitations of trained models. The framework can guide future model reporting, while the current stage must explicitly state when no trained model or model evaluation is available.",
+      "report_use": "Sections 3 and 9: future model documentation and distinction between planned evaluation and measured results."
+    },
+    {
+      "id": "NVD",
+      "title": "The National Vulnerability Database (NVD): Overview",
+      "authors": ["Harold Booth", "Doug Rike", "Gregory A. Witte"],
+      "date": "2013-12-18",
+      "date_type": "publication",
+      "venue": "NIST ITL Bulletin",
+      "url": "https://www.nist.gov/publications/national-vulnerability-database-nvd-overview",
+      "type": "official publication",
+      "notes": "The overview describes NVD as a standards-based repository of vulnerability and configuration information, impact metrics and related references. Such catalogue metadata describes reported issues; it does not by itself verify the observed state or behavior of a local Android device.",
+      "report_use": "Section 4: compare a public metadata catalogue with a local, evidence-producing diagnostic prototype."
+    },
+    {
+      "id": "SYZKALLER",
+      "title": "syzkaller - kernel fuzzer (README)",
+      "authors": ["The syzkaller project authors"],
+      "date": null,
+      "date_type": "continuously maintained source repository; cite access date",
+      "url": "https://github.com/google/syzkaller/blob/master/README.md",
+      "type": "official upstream project documentation",
+      "notes": "The upstream README describes syzkaller as an unsupervised coverage-guided kernel fuzzer and lists supported operating systems. Its purpose differs from a local Android diagnostic viewer, and importing static diagnostic fixtures does not mean this project implements or runs syzkaller's fuzzing engine.",
+      "report_use": "Section 4: documented purpose of the upstream related system without unmeasured claims of superiority."
+    },
+    {
+      "id": "SYZKALLER_REPORT_TESTS",
+      "title": "syzkaller report parser tests and test-data loading",
+      "authors": ["The syzkaller project authors"],
+      "date": null,
+      "date_type": "continuously maintained source file; copyright begins 2015; cite access date",
+      "url": "https://github.com/google/syzkaller/blob/master/pkg/report/report_test.go",
+      "supporting_url": "https://github.com/google/syzkaller/tree/master/pkg/report/testdata",
+      "type": "official upstream test source",
+      "notes": "The report tests compare parsed diagnostic fields against fixture expectations and load test files from operating-system-specific and shared testdata directories. These files are regression fixtures for report parsing; they do not establish that a crash happened on this team's devices or provide project-specific experimental validation.",
+      "report_use": "Sections 4 and 9: provenance and proper interpretation of upstream report fixtures."
+    }
+  ],
+  "comparison_rows": [
+    {
+      "system": "NVD",
+      "purpose": "Standards-based vulnerability and configuration metadata catalogue.",
+      "input": "Published vulnerability records and associated metadata.",
+      "output": "References, impact and product/configuration information.",
+      "limitation": "A catalogue entry does not establish the observed runtime state or behavior of a specific device.",
+      "source_ids": ["NVD"]
+    },
+    {
+      "system": "Upstream syzkaller and report fixtures",
+      "purpose": "Kernel fuzzing project with regression fixtures for diagnostic-report parsing.",
+      "input": "Fuzzer environments and kernel interfaces; report-parser tests separately consume stored diagnostic logs.",
+      "output": "Project-generated diagnostic reports and parser-test results within its own documented workflow.",
+      "limitation": "Static fixtures are upstream test inputs, not evidence of this team's device measurements.",
+      "source_ids": ["SYZKALLER", "SYZKALLER_REPORT_TESTS"]
+    },
+    {
+      "system": "This repository's current local diagnostic prototype",
+      "purpose": "Inspect authorized local device context and organise research evidence, subject to what is verified in the tagged repository.",
+      "input": "Documented local observations and explicitly attributed imported research artifacts.",
+      "output": "Visible diagnostic context, preserved reports and traceable source materials.",
+      "limitation": "Do not claim trained ML, exploit generation, automated selection, new device measurements or broad filesystem validation unless separately demonstrated by tagged artifacts.",
+      "source_ids": [],
+      "evidence_note": "This row is project interpretation. The root agent must substantiate each stated implemented capability against the tagged repository, not these external sources."
+    }
+  ],
+  "citation_policy": "Use these sources only for their documented claims. Do not reproduce benchmark numbers as this project's results. No direct quotations are required. Generic official documentation has a collective author; where no publication date is stated use n.d. plus accessed 24 October 2026."
+}
