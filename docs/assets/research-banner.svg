@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Android FS · ML Research</title>
+  <desc id="desc">Исследовательский репозиторий: диагностика Android, данные и методика оценки. Тёмно-синий фон, бирюзовые акценты и схема слоёв исследовательских материалов.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091525"/>
+      <stop offset="1" stop-color="#111d37"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#cbd5e1" stroke-opacity=".035"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="300" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect width="1200" height="300" fill="url(#grid)"/>
+    <ellipse cx="980" cy="130" rx="300" ry="260" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
+    <path d="M760 0L640 300" stroke="#334155" stroke-opacity=".35"/>
+    <g font-family="Segoe UI, Arial, sans-serif">
+      <rect x="48" y="38" width="6" height="6" rx="3" fill="#5eead4"/>
+      <text x="65" y="47" font-size="12" font-weight="600" letter-spacing="2.5" fill="#94a3b8">DIPLOMA RESEARCH / 2026</text>
+      <text x="46" y="121" font-size="58" font-weight="700" letter-spacing="-1.5" fill="#f1f5f9">ANDROID</text>
+      <text x="48" y="176" font-size="42" font-weight="600" letter-spacing="-.8" fill="#5eead4">FS × ML RESEARCH</text>
+      <text x="50" y="215" font-size="16" fill="#a8b6cc">Diagnostics. Data. Reproducible evaluation.</text>
+      <path d="M50 245H91" stroke="#5eead4" stroke-width="2"/>
+      <text x="106" y="250" font-size="11" letter-spacing="2" fill="#94a3b8">ANDROID / FILE SYSTEMS / MACHINE LEARNING</text>
+    </g>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M786 199H742V237H705" stroke="#475569"/>
+      <path d="M1072 107H1127V63H1166" stroke="#475569"/>
+      <circle cx="705" cy="237" r="3" fill="#818cf8" stroke="#818cf8"/>
+      <circle cx="1166" cy="63" r="3" fill="#5eead4" stroke="#5eead4"/>
+      <path d="M805 188L934 133L1085 190L956 246Z" fill="#101b31" stroke="#46527d"/>
+      <path d="M805 155L934 100L1085 157L956 213Z" fill="#14243a" stroke="#4c6c84"/>
+      <path d="M805 122L934 67L1085 124L956 180Z" fill="#153247" stroke="#5eead4" stroke-opacity=".75"/>
+      <path d="M843 123L935 84L1047 126L956 165Z" stroke="#2dd4bf" stroke-opacity=".24"/>
+      <path d="M934 67V43M956 246V265" stroke="#64748b" stroke-dasharray="3 5"/>
+      <circle cx="934" cy="43" r="3" fill="#5eead4" stroke="none"/>
+      <circle cx="956" cy="265" r="3" fill="#818cf8" stroke="none"/>
+      <path d="M898 123L922 113M950 105L984 118M979 140L956 150" stroke="#5eead4" stroke-width="3"/>
+      <path d="M912 130L942 118L971 129L942 141Z" fill="#5eead4" fill-opacity=".12" stroke="#99f6e4"/>
+    </g>
+    <g font-family="Segoe UI, Arial, sans-serif" font-size="9" letter-spacing="1.5" fill="#94a3b8">
+      <text x="1099" y="130">DATA</text>
+      <text x="1099" y="164">METHOD</text>
+      <text x="1099" y="198">EVIDENCE</text>
+    </g>
+  </g>
+</svg>
