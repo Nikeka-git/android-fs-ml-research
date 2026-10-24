@@ -1,82 +1,125 @@
-# Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems
+<p align="center">
+  <img src="docs/assets/research-banner.svg" alt="Android FS · ML Research — диагностика, данные и методика оценки" width="100%">
+</p>
 
-Дипломный проект: исследование ML/AI-подхода к автоматическому выбору подходящего существующего эксплойта по характеристикам Android-устройства. Официальное название темы сохранено; уточнённая цель — выбор из существующих материалов. Текущая версия содержит диагностический прототип и исследовательские исходники; готовая ML-модель и качество её рекомендаций пока не подтверждены.
+<h1 align="center">Android FS · ML Research</h1>
 
-**Репозиторий:** [https://github.com/Nikeka-git/android-fs-ml-research](https://github.com/Nikeka-git/android-fs-ml-research) · **Доступ:** Public.
+<p align="center">
+  Исследование Android, файловых систем и методов машинного обучения.<br>
+  Диагностический прототип, исследовательские материалы и воспроизводимая проверка данных.
+</p>
 
-**Апробационная версия:** [prob-period-1](https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1) · [ответы на пункты 4–7](docs/prob-period-1.md) · [цель и границы проекта](docs/project-scope.md).
+<p align="center">
+  <a href="docs/README.md"><b>Документация</b></a> ·
+  <a href="modules/README.md"><b>Модули</b></a> ·
+  <a href="data/README.md"><b>Данные</b></a> ·
+  <a href="docs/team.md"><b>Команда и вклад</b></a> ·
+  <a href="https://github.com/users/Nikeka-git/projects/1"><b>Доска проекта</b></a>
+</p>
 
-**Руководитель:** Zhaksylyk Kozhakhmet. **Технический лидер:** Tsybus Nikita Valentinovich.
+<p align="center">
+  <a href="modules/README.md"><img src="https://img.shields.io/badge/модули-2-1e293b?style=flat-square&amp;labelColor=0f172a" alt="2 исследовательских модуля"></a>
+  <a href="data/diagnostic-texts/manifest.json"><img src="https://img.shields.io/badge/публичные_тексты-12-0f766e?style=flat-square&amp;labelColor=0f172a" alt="12 публичных диагностических текстов"></a>
+  <a href="evidence/imports/android-poc-research/FILE_INDEX.csv"><img src="https://img.shields.io/badge/исходные_тексты_импорта-204-4338ca?style=flat-square&amp;labelColor=0f172a" alt="204 исходных текста в исследовательском импорте"></a>
+  <a href="https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1"><img src="https://img.shields.io/badge/версия-prob--period--1-475569?style=flat-square&amp;labelColor=0f172a" alt="Апробационная версия prob-period-1"></a>
+</p>
 
-## Текущий этап
+## Начните здесь
 
-| Модуль | Содержимое | Состояние |
-|---|---|---|
-| [binder-diagnostics](modules/binder-diagnostics/) | Android/Kotlin/JNI/C++17, локальная симуляция и диагностика Binder | Предоставленный снимок диагностического прототипа |
-| [android-poc-research](modules/android-poc-research/) | Единый набор существующих исходников, версий PoC и отчётов | Импортированный исследовательский снимок; работоспособность при переносе не проверялась |
-
-Подготовлены общая структура проекта, реестр модулей, документация, материалы исследования и учёт происхождения файлов. В исследовательском импорте сохранены 204 исходных текстовых файла с проверкой SHA-256. Исходники внутри модуля объединены без деления по авторству. Существующие авторские упоминания и лицензии сохранены в самих файлах.
-
-Импорт и подготовка репозитория подтверждены коммитами [b23517a](https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202) и [9b84849](https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d). Эти изменения фиксируют доставку снимков и оформление материалов; более ранняя история разработки исходников по ним не восстанавливается.
-
-## Команда
-
-| Участник | GitHub | Текущий вклад и ответственность |
-|---|---|---|
-| Tsybus Nikita Valentinovich | [Nikeka-git](https://github.com/Nikeka-git) | Техническое руководство, архитектура и основная работа над прототипом и исследованием по сообщению автора; подготовка репозитория и материалов подтверждена коммитами |
-| Kassymgali Bakytzhan Zhenisuly | [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки: реестр 12 публичных текстов, проверка происхождения, правила разметки и разделения, показатели и ограничения оценки |
-| Galidullaeva Aliya Khantanirovna | [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов |
-
-Подробности и ссылки находятся в [docs/team.md](docs/team.md). YouTrack не используется. В репозитории есть [GitHub Issues](https://github.com/Nikeka-git/android-fs-ml-research/issues) и [общая доска](https://github.com/users/Nikeka-git/projects/1); плановые задачи не выданы за выполненные индивидуальные работы.
-
-## Документация и материалы
-
-| Материал | Назначение |
+| Хочу… | Куда перейти |
 |---|---|
-| [docs/prob-period-1.md](docs/prob-period-1.md) | Ответы на пункты 4–7 формы: репозиторий, версия, вклад и состояние |
-| [docs/project-scope.md](docs/project-scope.md) | Официальная тема, уточнённая цель и границы текущего этапа |
-| [docs/team.md](docs/team.md) | Состав команды, фактические подтверждения и планируемые обязанности |
-| [docs/submission.md](docs/submission.md) | Ссылки для сдачи и оставшиеся вопросы |
-| [docs/architecture.md](docs/architecture.md) | Организация модулей |
-| [docs/evidence.md](docs/evidence.md) | Реестр источников и ограничения подтверждений |
-| [docs/research/data-preparation.md](docs/research/data-preparation.md) | Подготовка данных: источники, разметка, контроль целостности и разделение |
-| [docs/research/evaluation-methodology.md](docs/research/evaluation-methodology.md) | Методика оценки текстовых компонентов и план будущей проверки на ACK |
-| [data/diagnostic-texts/manifest.json](data/diagnostic-texts/manifest.json) | Реестр 12 публичных текстов с закреплёнными URL, размерами и SHA-256 |
-| [docs/research/sources/assignment3-tsybus-kassymgali.docx](docs/research/sources/assignment3-tsybus-kassymgali.docx) | Предоставленный совместный Assignment 3; заявленные результаты прототипа не перезапускались |
-| [docs/research/android-poc-research.md](docs/research/android-poc-research.md) | Существующий сводный исследовательский отчёт |
-| [evidence/imports/android-poc-research/manifest.json](evidence/imports/android-poc-research/manifest.json) | Происхождение импорта и перечень исключённых материалов |
-| [evidence/imports/android-poc-research/FILE_INDEX.csv](evidence/imports/android-poc-research/FILE_INDEX.csv) | Пути, размеры и SHA-256 всех 204 перенесённых исходных текстов |
-| [modules/catalog.json](modules/catalog.json) | Реестр двух добавленных модулей |
-| [project.json](project.json) | Метаданные проекта и апробационной версии |
+| **Понять тему и текущее состояние** | [Цель и границы](docs/project-scope.md) → [архитектура](docs/architecture.md) |
+| **Посмотреть исходники** | [Каталог модулей](modules/README.md) → описание нужного модуля |
+| **Изучить данные и методику** | [Подготовка данных](docs/research/data-preparation.md) → [методика оценки](docs/research/evaluation-methodology.md) |
+| **Проверить индивидуальный вклад** | [Команда и подтверждения](docs/team.md) → [вклад Kerey404, PR №21](https://github.com/Nikeka-git/android-fs-ml-research/pull/21) |
+| **Найти материалы для защиты** | [Навигатор по отчётам](docs/README.md#материалы-для-защиты) → [апробационная версия](docs/submission.md) |
 
-В [docs/report/](docs/report/) сохранены предварительный отчёт и снимки доски от 15 октября 2026 года. Они отражают прежний этап; актуальное описание двух модулей и пункты 4–7 находятся в документации версии `prob-period-1`. Исходные документы могут содержать заявления о результатах, которые при переносе не перепроверялись.
+## О проекте
 
-## Проверки и ограничения
+Исследуем применение ML/AI к выбору существующих исследовательских материалов по характеристикам Android-устройства. Уточнённая цель проекта — автоматический выбор подходящего существующего эксплойта; текущий репозиторий содержит диагностический прототип и базу для дальнейшей оценки этого подхода.
 
-- При подготовке снимков проверены состав файлов, происхождение, относительные ссылки, JSON и контрольные суммы. Исходники PoC не изменялись и не запускались.
-- Для `binder-diagnostics` сохранены [JUnit XML](evidence/stored/junit-unit-tests.xml) с 24 тестами без ошибок и [lint-отчёт](evidence/stored/lint-results-debug.txt) с 0 ошибками и 1 предупреждением. Это прежние отчёты, проверки не перезапускались. JVM-тесты используют симуляцию.
-- Обученная ML-модель, готовый обучающий набор, результаты обучения и измерения качества выбора в текущих материалах не представлены.
-- Работоспособность импортированных PoC и охват разных устройств и файловых систем не подтверждены новыми испытаниями.
-- Вклад Kerey404 от 24 октября 2026 года описан в [материалах подготовки данных](docs/research/data-preparation.md) и [методике оценки](docs/research/evaluation-methodology.md). Проверены байты 12 публичных источников (46 570 байт); показатели парсера и ML из совместного Assignment 3 повторно не измерялись. Индивидуальные материалы aliiyaaa и подтверждения взаимных ревью ещё нужно добавить.
-- Сырые журналы устройства, дампы, архивы и результаты сборки сохранены отдельно локально.
+**Руководитель:** Zhaksylyk Kozhakhmet · **Технический лидер:** Tsybus Nikita Valentinovich.
 
-## Следующий этап
+<details>
+<summary><b>Официальная тема дипломной работы</b></summary>
 
-Согласовать подготовленную методику, независимо проверить разметку и получить исходники текстового прототипа для проверки заявленных результатов; подготовить подтверждённый стенд и данные ACK; реализовать и оценить ML-подход на целевом окружении; обновить отчёт по полученным результатам. Это план, не перечень завершённых работ.
+Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems
 
-## Структура
+Официальная тема сохранена. Уточнение цели и границы текущего этапа описаны в [спецификации исследования](docs/project-scope.md). Совместный Assignment 3 также описывает текстовый прототип и план будущего ACK-исследования; его заявленные результаты учитываются отдельно от новых проверок репозитория.
 
-```text
-modules/       # Два добавленных модуля, каталог и шаблон
-docs/          # Цель, команда, текущий статус и материалы сдачи
-evidence/      # Источники, сохранённые отчёты и хеши
-experiments/   # Правила фиксации фактических запусков
-data/          # Реестры исследовательских данных
-tools/         # Проверка происхождения материалов
-planning/      # План и соответствие задач GitHub
-shared/        # Место для общих компонентов
+</details>
+
+## Что уже подготовлено
+
+| Направление | Что можно посмотреть | Подтверждённое состояние |
+|---|---|---|
+| **Диагностика Android** | [binder-diagnostics](modules/binder-diagnostics/README.md) · Kotlin / JNI / C++17 | Снимок прототипа: локальная симуляция и диагностика Binder |
+| **Исследовательская база** | [android-poc-research](modules/android-poc-research/README.md) · [индекс файлов](evidence/imports/android-poc-research/FILE_INDEX.csv) | 204 сохранённых исходных текста; происхождение и SHA-256 зафиксированы |
+| **Подготовка данных** | [12 публичных текстов](data/diagnostic-texts/manifest.json) · [правила подготовки](docs/research/data-preparation.md) | Проверены размеры и хеши 12/12 источников, всего 46 570 байт |
+| **Методика оценки** | [Показатели, сравнение и ограничения](docs/research/evaluation-methodology.md) | Описаны метрики, разделение данных, парные сравнения и учёт неполных результатов |
+
+> **Статус исследования.** Байтовая целостность источников проверена. Сборка и выполнение импортированных PoC не проверялись; новые Android/ACK-испытания не проводились. Результаты текстового ML-прототипа из Assignment 3 повторно не измерялись. Подробнее — в [реестре подтверждений](evidence/README.md).
+
+## Команда и вклад
+
+| Участник | Направление | Материалы и подтверждения |
+|---|---|---|
+| **Tsybus Nikita Valentinovich** · [Nikeka-git](https://github.com/Nikeka-git) | Техническое руководство, архитектура, прототип и исследование | [Диагностический снимок](https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202) · [импорт исследовательской базы](https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d) |
+| **Kassymgali Bakytzhan Zhenisuly** · [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки | [Данные](docs/research/data-preparation.md) · [методика](docs/research/evaluation-methodology.md) · [коммит](https://github.com/Nikeka-git/android-fs-ml-research/commit/60c5ca231a5c749a7ef707516d5fa3fcf44b0bca) |
+| **Galidullaeva Aliya Khantanirovna** · [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов | [Загруженный аналитический PDF](docs/analytics.pdf) · [коммит добавления](https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714); содержание отдельно не проверялось |
+
+Подробное описание фактического вклада, совместного авторства и открытых вопросов — в [сведениях о команде](docs/team.md). Наличие материала в репозитории само по себе не устанавливает индивидуальное авторство.
+
+## Проверить данные
+
+Из корня репозитория, **Python 3.12+**, без дополнительных пакетов:
+
+```bash
+# Проверить реестр и локальные исследовательские материалы
+python tools/verify_research_sources.py
+
+# Дополнительно сверить 12 публичных источников по HTTPS
+python tools/verify_research_sources.py --fetch
 ```
 
-Правила дальнейшей работы: [CONTRIBUTING.md](CONTRIBUTING.md). Апробационная версия фиксируется тегом `prob-period-1`; для сдачи используются ссылки на этот тег, чтобы последующие изменения `main` не меняли представленную версию.
+Проверка сопоставляет размеры и SHA-256; входные тексты не выполняются. Это проверка происхождения материалов. Для Android-проекта используйте отдельное [описание модуля](modules/binder-diagnostics/README.md).
 
-Материалы Kerey404 от 24 октября добавлены после версии `prob-period-1` и не входят в прежний тег. Для ссылки на этот вклад используйте соответствующий новый коммит или pull request.
+## Карта репозитория
+
+```text
+android-fs-ml-research/
+├── modules/       Диагностический прототип и исследовательский снимок
+├── docs/          Цель, архитектура, методика, команда и отчёты
+├── data/          Реестры исследовательских данных
+├── evidence/      Происхождение, хеши и сохранённые подтверждения
+├── experiments/   Правила учёта будущих фактических запусков
+├── tools/         Проверка исследовательских источников
+├── planning/      План задач и соответствие GitHub Issues
+└── shared/        Общие компоненты по мере появления
+```
+
+[Модули](modules/README.md) · [Документация](docs/README.md) · [Данные](data/README.md) · [Подтверждения](evidence/README.md) · [Архитектура подробнее](docs/architecture.md)
+
+## Следующие шаги
+
+- [x] Организовать монорепозиторий и сохранить происхождение импортированных материалов.
+- [x] Подготовить реестр публичных диагностических текстов и проверку их целостности.
+- [x] Оформить методику оценки и связать подготовленные материалы с вкладом участника.
+- [ ] Независимо проверить разметку и воспроизвести заявленные результаты текстового прототипа.
+- [ ] Подтвердить стенд и подготовить данные для целевого ACK-исследования.
+- [ ] Выполнить согласованную оценку и обновить отчёт по фактическим результатам.
+
+[Задачи GitHub](https://github.com/Nikeka-git/android-fs-ml-research/issues) · [Доска проекта](https://github.com/users/Nikeka-git/projects/1) · [Правила участия](CONTRIBUTING.md)
+
+<details>
+<summary><b>Версии, сохранённые отчёты и ограничения</b></summary>
+
+- [`main`](https://github.com/Nikeka-git/android-fs-ml-research/tree/main) содержит текущие материалы, включая вклад Kerey404 от 24 октября 2026 года.
+- [`prob-period-1`](https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1) — фиксированный снимок предыдущей апробационной версии. Новые материалы из `main` не входят в прежний тег.
+- [Ответы на пункты 4–7](docs/prob-period-1.md) и [комплект сдачи](docs/submission.md) описывают этот исторический снимок.
+- [Сохранённые отчёты](docs/report/README.md) и снимки доски относятся к 15 октября 2026 года.
+- [JUnit XML](evidence/stored/junit-unit-tests.xml) содержит 24 теста без ошибок; [lint-отчёт](evidence/stored/lint-results-debug.txt) — 0 ошибок и 1 предупреждение. Эти прежние проверки не перезапускались; JVM-тесты используют симуляцию.
+- Исходники, модель и журналы текстового прототипа, описанного в Assignment 3, пока не предоставлены. Готовый обучающий набор и подтверждённое качество выбора эксплойта в репозитории не представлены.
+- Прежнее авторство импортированных файлов, работоспособность PoC и охват разных устройств не устанавливаются фактом импорта. Сырые журналы, дампы, архивы и результаты сборки хранятся отдельно.
+
+</details>
