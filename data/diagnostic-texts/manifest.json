@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-10-24",
+  "prepared_by": "Kerey404",
+  "module_id": "shared",
+  "purpose": "Provenance and reference labels for public diagnostic parser development texts; not ACK trial data",
+  "upstream_repository": "google/syzkaller",
+  "upstream_revision": "abce12164965bc4439aad38d787d980496e3f106",
+  "upstream_license": "Apache-2.0",
+  "upstream_license_url": "https://github.com/google/syzkaller/blob/abce12164965bc4439aad38d787d980496e3f106/LICENSE",
+  "annotation_source": "docs/research/sources/assignment3-tsybus-kassymgali.docx",
+  "raw_texts_included": false,
+  "summary": {
+    "file_count": 12,
+    "total_bytes": 46570,
+    "reference_label_counts": {
+      "ext4": 5,
+      "F2FS": 2,
+      "none": 5
+    }
+  },
+  "records": [
+    {
+      "report_id": 0,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/0",
+      "bytes": 911,
+      "sha256": "98b6db53cf18059bd963b56a252caa897cf49d5596801ed6d6e1328e98c93615",
+      "reference_label": "none",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 53,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/53",
+      "bytes": 445,
+      "sha256": "406b794987a85c10635d3884efa83c631e6bdb9969f3bbb05d2f74139dbe37c1",
+      "reference_label": "ext4",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 277,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/277",
+      "bytes": 3076,
+      "sha256": "bb7fdb25f26c4d434dca4702c7b9416a8ad3d3db4fa05638d8dc9af7184e7835",
+      "reference_label": "ext4",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 386,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/386",
+      "bytes": 1993,
+      "sha256": "c6d5002d9a75512dcbdbd4bc75def15067450bf014d9862fc1c638ad21de1fa8",
+      "reference_label": "none",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 420,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/420",
+      "bytes": 475,
+      "sha256": "ba30a7f9ce01201eb4a31bd34082fb7104c22b0f3da9e35afd3f3707e696b154",
+      "reference_label": "none",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 456,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/456",
+      "bytes": 2280,
+      "sha256": "c03ffdf90923bcf9c1b4b2b2b3b5213b8a2c275c49e2b1658317c13aa8754a5b",
+      "reference_label": "F2FS",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 625,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/625",
+      "bytes": 3466,
+      "sha256": "43cc7f6aa4e689bd6dd072144b6744477fcadae7f924df63c4ab92dedc22c8bf",
+      "reference_label": "ext4",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 627,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/627",
+      "bytes": 8841,
+      "sha256": "d71833d31c7860349ef72a52ab35b43e2681879e4e0e85e9acb5459497fc9928",
+      "reference_label": "ext4",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 704,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/704",
+      "bytes": 13904,
+      "sha256": "528c150532863e880fa12f674bf60f145df178bba243c1d34b948d1419402c65",
+      "reference_label": "none",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 728,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/728",
+      "bytes": 222,
+      "sha256": "193eaee27f5d526c5b3919c381e1581c2329fad7a8cc7053ec3537a4a19d0113",
+      "reference_label": "none",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 741,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/741",
+      "bytes": 5994,
+      "sha256": "f2c1f9dcc4739d6c2a5fc6cb44b6e15bffb3c2a0770cd7987d6bc9f2e2a7fb8b",
+      "reference_label": "F2FS",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    },
+    {
+      "report_id": 755,
+      "source_url": "https://raw.githubusercontent.com/google/syzkaller/abce12164965bc4439aad38d787d980496e3f106/pkg/report/testdata/linux/report/755",
+      "bytes": 4963,
+      "sha256": "edb7e61741db6bedec2ae8789d57fc1e8fa7ce0dccc9ae7284e7595d1e4136f9",
+      "reference_label": "ext4",
+      "annotation_status": "reported_not_independently_reviewed",
+      "partition": null,
+      "evidence_level": "public_parser_fixture"
+    }
+  ]
+}
