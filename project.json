@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
   "language": "ru",
-  "scaffold_status": "Публичный монорепозиторий с двумя снимками, материалами первого апробационного периода и пакетом подготовки данных Kerey404 от 2026-10-24; вклад aliiyaaa и взаимные ревью требуют подтверждения",
+  "scaffold_status": "Публичный монорепозиторий с двумя снимками, материалами первого апробационного периода, пакетом подготовки данных Kerey404 и аналитическим PDF, добавленным aliiyaaa; взаимные ревью требуют подтверждения",
   "repository_layout": {
     "type": "monorepo",
     "module_catalog": "modules/catalog.json",
@@ -110,9 +110,11 @@
       "name": "Galidullaeva Aliya Khantanirovna",
       "github_username": "aliiyaaa",
       "gitlab_username": null,
-      "responsibility": "Предлагаемая роль следующего этапа: аналитическая документация и оформление результатов",
-      "contribution_status": "Завершённый индивидуальный вклад требует подтверждения",
-      "confirmed_contributions": [],
+      "responsibility": "Аналитическая документация и оформление результатов",
+      "contribution_status": "Добавление docs/analytics.pdf подтверждено коммитом eb6dc9e; содержание и первоначальное авторство отдельно не проверялись",
+      "confirmed_contributions": [
+        "https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714"
+      ],
       "youtrack_task_ids": []
     }
   ],

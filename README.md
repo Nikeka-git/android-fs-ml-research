@@ -66,7 +66,7 @@ Development of a Machine Learning-Based Exploit Generation Module for Various An
 |---|---|---|
 | **Tsybus Nikita Valentinovich** · [Nikeka-git](https://github.com/Nikeka-git) | Техническое руководство, архитектура, прототип и исследование | [Диагностический снимок](https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202) · [импорт исследовательской базы](https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d) |
 | **Kassymgali Bakytzhan Zhenisuly** · [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки | [Данные](docs/research/data-preparation.md) · [методика](docs/research/evaluation-methodology.md) · [коммит](https://github.com/Nikeka-git/android-fs-ml-research/commit/60c5ca231a5c749a7ef707516d5fa3fcf44b0bca) |
-| **Galidullaeva Aliya Khantanirovna** · [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов | Область ответственности; завершённые индивидуальные материалы ожидают подтверждения |
+| **Galidullaeva Aliya Khantanirovna** · [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов | [Загруженный аналитический PDF](docs/analytics.pdf) · [коммит добавления](https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714); содержание отдельно не проверялось |
 
 Подробное описание фактического вклада, совместного авторства и открытых вопросов — в [сведениях о команде](docs/team.md). Наличие материала в репозитории само по себе не устанавливает индивидуальное авторство.
 
