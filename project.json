@@ -2,7 +2,7 @@
   "schema_version": 1,
   "title": "Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems",
   "language": "ru",
-  "scaffold_status": "Публичный монорепозиторий с двумя снимками и документацией первого апробационного периода; вклад двух участников требует подтверждения",
+  "scaffold_status": "Публичный монорепозиторий с двумя снимками, материалами первого апробационного периода и пакетом подготовки данных Kerey404 от 2026-10-24; вклад aliiyaaa и взаимные ревью требуют подтверждения",
   "repository_layout": {
     "type": "monorepo",
     "module_catalog": "modules/catalog.json",
@@ -94,9 +94,15 @@
       "name": "Kassymgali Bakytzhan Zhenisuly",
       "github_username": "Kerey404",
       "gitlab_username": null,
-      "responsibility": "Предлагаемая роль следующего этапа: подготовка исследовательских данных и методики оценки",
-      "contribution_status": "Завершённый индивидуальный вклад требует подтверждения",
-      "confirmed_contributions": [],
+      "responsibility": "Подготовка исследовательских данных и методики оценки",
+      "contribution_status": "Подготовлен пакет от 2026-10-24: реестр 12 публичных текстов, проверка происхождения, правила разметки и разделения, методика оценки; результаты прототипа из совместного отчёта не перезапускались",
+      "confirmed_contributions": [
+        "docs/research/data-preparation.md",
+        "docs/research/evaluation-methodology.md",
+        "data/diagnostic-texts/manifest.json",
+        "tools/verify_research_sources.py",
+        "evidence/methodology/assignment3-manifest.json"
+      ],
       "youtrack_task_ids": []
     },
     {
@@ -167,5 +173,20 @@
     }
   ],
   "research_goal": "ML/AI-модуль для автоматического выбора наиболее подходящего существующего эксплойта по характеристикам Android-устройства",
-  "research_goal_source": "Уточнение автора от 2026-10-23"
+  "research_goal_source": "Уточнение автора от 2026-10-23",
+  "prepared_research_materials": {
+    "prepared_on": "2026-10-24",
+    "prepared_by": "Kerey404",
+    "module_id": "shared",
+    "data_preparation": "docs/research/data-preparation.md",
+    "evaluation_methodology": "docs/research/evaluation-methodology.md",
+    "source_manifest": "data/diagnostic-texts/manifest.json",
+    "provided_artifacts": "evidence/methodology/assignment3-manifest.json",
+    "upstream_files_checked": 12,
+    "upstream_bytes_checked": 46570,
+    "protocol_status": "Proposed methodology from joint Assignment 3; module-specific agreement and ACK testbed pending",
+    "new_model_training_run": false,
+    "new_android_or_ack_experiments_run": false,
+    "included_in_prob_period_1_tag": false
+  }
 }

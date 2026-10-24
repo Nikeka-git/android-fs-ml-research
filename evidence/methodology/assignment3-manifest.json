@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "received_on": "2026-10-24",
+  "recorded_by": "Kerey404",
+  "source": "User-provided Assignment 3 report and system flow image",
+  "report_authors": [
+    "Nikita Tsybus",
+    "Bakytzhan Kassymgali"
+  ],
+  "report_stated_date": "2026-10-18",
+  "original_creation_date_verified": false,
+  "report_protocol_version": "A3.3",
+  "artifacts": [
+    {
+      "repo_path": "docs/research/sources/assignment3-tsybus-kassymgali.docx",
+      "kind": "provided_joint_report",
+      "bytes": 464205,
+      "sha256": "71e1cf697cca1e7a7b50dffb8fe1a04adbe64b7a34d4e8064ba99d5ea5d127e3"
+    },
+    {
+      "repo_path": "docs/research/assets/system-flow.png",
+      "kind": "provided_system_flow_diagram",
+      "bytes": 644983,
+      "sha256": "71abdc792b8007b7dd3df0d63987bb1a414d0744527736ae7558f553af4aa105"
+    }
+  ],
+  "verification": {
+    "local_copies_byte_identical": true,
+    "public_source_bytes_checked": true,
+    "public_source_manifest": "data/diagnostic-texts/manifest.json",
+    "reported_parser_and_ml_results_rerun": false,
+    "android_or_ack_experiments_run": false
+  },
+  "limitations": [
+    "Joint authorship is preserved; this import does not establish sole authorship of earlier implementation.",
+    "Programs, model outputs and trial ledgers referenced by the report are not included.",
+    "Reported performance and software-test counts have not been independently reproduced.",
+    "Per-source train/validation/test membership is not recoverable from the report."
+  ]
+}

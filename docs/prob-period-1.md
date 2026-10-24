@@ -1,5 +1,7 @@
 Project title: **Development of a Machine Learning-Based Exploit Generation Module for Various Android OS File Systems**
 
+Historical scope: the answers below describe the frozen `prob-period-1` snapshot. Kerey404's data-preparation and evaluation materials added on 24 October 2026 are documented separately in [the current team record](team.md) and [the evaluation methodology](research/evaluation-methodology.md); they are not part of the earlier tag.
+
 ## 4. GitLab/GitHub project repository URL
 
 [https://github.com/Nikeka-git/android-fs-ml-research](https://github.com/Nikeka-git/android-fs-ml-research)
