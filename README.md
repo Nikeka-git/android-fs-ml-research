@@ -65,8 +65,8 @@ Development of a Machine Learning-Based Exploit Generation Module for Various An
 | Участник | Направление | Материалы и подтверждения |
 |---|---|---|
 | **Tsybus Nikita Valentinovich** · [Nikeka-git](https://github.com/Nikeka-git) | Техническое руководство, архитектура, прототип и исследование | [Диагностический снимок](https://github.com/Nikeka-git/android-fs-ml-research/commit/b23517afda69fdb3d9a937e5c2eb024060d95202) · [импорт исследовательской базы](https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d) |
-| **Kassymgali Bakytzhan Zhenisuly** · [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки | [Данные](docs/research/data-preparation.md) · [методика](docs/research/evaluation-methodology.md) · [коммит](https://github.com/Nikeka-git/android-fs-ml-research/commit/60c5ca231a5c749a7ef707516d5fa3fcf44b0bca) |
-| **Galidullaeva Aliya Khantanirovna** · [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов | [Загруженный аналитический PDF](docs/analytics.pdf) · [коммит добавления](https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714); содержание отдельно не проверялось |
+| **Kassymgali Bakytzhan Zhenisuly** · [Kerey404](https://github.com/Kerey404) | Подготовка исследовательских данных и методики оценки; оформление репозитория | [Данные и методика, PR #21](https://github.com/Nikeka-git/android-fs-ml-research/pull/21) · [навигация, PR #22](https://github.com/Nikeka-git/android-fs-ml-research/pull/22) · [задачи #23](https://github.com/Nikeka-git/android-fs-ml-research/issues/23), [#24](https://github.com/Nikeka-git/android-fs-ml-research/issues/24) |
+| **Galidullaeva Aliya Khantanirovna** · [aliiyaaa](https://github.com/aliiyaaa) | Аналитическая документация и оформление результатов | [Аналитический PDF](docs/analytics.pdf) · [коммит добавления](https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714) · [задача #25](https://github.com/Nikeka-git/android-fs-ml-research/issues/25) |
 
 Подробное описание фактического вклада, совместного авторства и открытых вопросов — в [сведениях о команде](docs/team.md). Наличие материала в репозитории само по себе не устанавливает индивидуальное авторство.
 
@@ -114,10 +114,10 @@ android-fs-ml-research/
 <details>
 <summary><b>Версии, сохранённые отчёты и ограничения</b></summary>
 
-- [`main`](https://github.com/Nikeka-git/android-fs-ml-research/tree/main) содержит текущие материалы, включая вклад Kerey404 от 24 октября 2026 года.
-- [`prob-period-1`](https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1) — фиксированный снимок предыдущей апробационной версии. Новые материалы из `main` не входят в прежний тег.
-- [Ответы на пункты 4–7](docs/prob-period-1.md) и [комплект сдачи](docs/submission.md) описывают этот исторический снимок.
-- [Сохранённые отчёты](docs/report/README.md) и снимки доски относятся к 15 октября 2026 года.
+- [`main`](https://github.com/Nikeka-git/android-fs-ml-research/tree/main) содержит текущие материалы.
+- [`prob-period-1`](https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1) — версия сдачи, обновлённая 24 октября 2026 года с вкладом участников и актуальными материалами доски. Предыдущий снимок доступен по [коммиту df9da6c](https://github.com/Nikeka-git/android-fs-ml-research/commit/df9da6cbbc35fef1b0b9142b225e5ca6808fec5d).
+- [Ответы на пункты 4–7](docs/prob-period-1.md) и [комплект сдачи](docs/submission.md) соответствуют обновлённой версии.
+- [Текущий PDF доски и задач](docs/report/board-and-tasks-2026-10-24.pdf) датирован 24 октября. [Сохранённые общие отчёты](docs/report/README.md) и прежние снимки доски относятся к 15 октября 2026 года.
 - [JUnit XML](evidence/stored/junit-unit-tests.xml) содержит 24 теста без ошибок; [lint-отчёт](evidence/stored/lint-results-debug.txt) — 0 ошибок и 1 предупреждение. Эти прежние проверки не перезапускались; JVM-тесты используют симуляцию.
 - Исходники, модель и журналы текстового прототипа, описанного в Assignment 3, пока не предоставлены. Готовый обучающий набор и подтверждённое качество выбора эксплойта в репозитории не представлены.
 - Прежнее авторство импортированных файлов, работоспособность PoC и охват разных устройств не устанавливаются фактом импорта. Сырые журналы, дампы, архивы и результаты сборки хранятся отдельно.

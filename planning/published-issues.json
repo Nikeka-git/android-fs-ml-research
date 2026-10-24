@@ -3,7 +3,7 @@
   "repository": "Nikeka-git/android-fs-ml-research",
   "api_version": "2026-03-10",
   "recorded_at_utc": "2026-10-15T14:08:17.7743976Z",
-  "notice": "Identifiers of real GitHub issues; original plan status is Planned. This file does not assert work completion or historical activity.",
+  "notice": "Identifiers and current metadata of 23 real GitHub issues, reconciled on 2026-10-24. Existing GitHub numeric/node IDs are preserved; unavailable IDs are omitted, not invented. Issues #21 and #22 are pull requests and are not task records in this list. R01–R11 retrospectively register evidenced results.",
   "issues": [
     {
       "plan_id": "P01",
@@ -13,7 +13,17 @@
       "number": 1,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/1",
       "node_id": "I_kwDOVK_pa88AAAABXb4Hbg",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P01] Получить требования к апробации и форме",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P02",
@@ -23,7 +33,17 @@
       "number": 2,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/2",
       "node_id": "I_kwDOVK_pa88AAAABXb4KQA",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P02] Проверить импортированную базу и собрать новые подтверждения",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P2 - Medium",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P03",
@@ -33,7 +53,17 @@
       "number": 3,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/3",
       "node_id": "I_kwDOVK_pa88AAAABXb4M9g",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P03] Согласовать реестр модулей и их границы",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P04",
@@ -43,7 +73,15 @@
       "number": 4,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/4",
       "node_id": "I_kwDOVK_pa88AAAABXb4Pmg",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P04] Описать доступный экспериментальный стенд",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "Todo",
+      "assignees": [],
+      "priority": "P2 - Medium",
+      "deadline": null,
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P05",
@@ -53,7 +91,15 @@
       "number": 5,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/5",
       "node_id": "I_kwDOVK_pa88AAAABXb4R3Q",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P05] Подготовить протокол экспериментов",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "Todo",
+      "assignees": [],
+      "priority": "P2 - Medium",
+      "deadline": null,
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P06",
@@ -63,7 +109,15 @@
       "number": 6,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/6",
       "node_id": "I_kwDOVK_pa88AAAABXb4Ufw",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P06] Определить критерии оценки",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "Todo",
+      "assignees": [],
+      "priority": "P2 - Medium",
+      "deadline": null,
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P07",
@@ -73,7 +127,17 @@
       "number": 7,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/7",
       "node_id": "I_kwDOVK_pa88AAAABXb4WsA",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P07] Составить план выбора данных и модели",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Kerey404"
+      ],
+      "priority": "P1 - High",
+      "deadline": null,
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P08",
@@ -83,7 +147,17 @@
       "number": 8,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/8",
       "node_id": "I_kwDOVK_pa88AAAABXb4fnA",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P08] Проверить монорепозиторий и описание воспроизведения",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P09",
@@ -93,7 +167,17 @@
       "number": 9,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/9",
       "node_id": "I_kwDOVK_pa88AAAABXb4jKw",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P09] Подтвердить состав команды и вклад",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P10",
@@ -103,7 +187,17 @@
       "number": 10,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/10",
       "node_id": "I_kwDOVK_pa88AAAABXb4mAQ",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P10] Согласовать площадки и проверить доступ",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P11",
@@ -113,7 +207,17 @@
       "number": 11,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/11",
       "node_id": "I_kwDOVK_pa88AAAABXb4o1Q",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P11] Подготовить единый отчёт по требованиям",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
     },
     {
       "plan_id": "P12",
@@ -123,7 +227,199 @@
       "number": 12,
       "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/12",
       "node_id": "I_kwDOVK_pa88AAAABXb4rhQ",
-      "disposition": "created"
+      "disposition": "created",
+      "title": "[P12] Подготовить PDF доски и проверить форму",
+      "github_state": "open",
+      "github_state_reason": null,
+      "board_status": "In Progress",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "initial-plan"
+    },
+    {
+      "plan_id": "R01",
+      "module_id": "shared",
+      "number": 13,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/13",
+      "title": "[R01] Создать репозиторий и каркас монорепозитория",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R02",
+      "module_id": "binder-diagnostics",
+      "number": 14,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/14",
+      "title": "[R02] Перенести диагностический Android-проект в отдельный модуль",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R03",
+      "module_id": "binder-diagnostics",
+      "number": 15,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/15",
+      "title": "[R03] Сохранить существующие JUnit и lint-отчёты с происхождением",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P2 - Medium",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R04",
+      "module_id": "android-poc-research",
+      "number": 16,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/16",
+      "title": "[R04] Собрать единый исследовательский модуль трёх групп PoC",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R05",
+      "module_id": "android-poc-research",
+      "number": 17,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/17",
+      "title": "[R05] Подготовить индекс целостности и границы исследовательского импорта",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R06",
+      "module_id": "shared",
+      "number": 18,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/18",
+      "title": "[R06] Уточнить цель проекта и описать фактическое состояние этапа",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R07",
+      "module_id": "shared",
+      "number": 19,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/19",
+      "title": "[R07] Подготовить сведения команды и тексты пунктов 4–7 формы",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R08",
+      "module_id": "shared",
+      "number": 20,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/20",
+      "title": "[R08] Зафиксировать апробационную версию prob-period-1",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Nikeka-git"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R09",
+      "module_id": "shared",
+      "number": 23,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/23",
+      "title": "[R09] Подготовить исследовательские данные и методику оценки",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Kerey404"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R10",
+      "module_id": "shared",
+      "number": 24,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/24",
+      "title": "[R10] Оформить README и навигацию по материалам",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "Kerey404"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
+    },
+    {
+      "plan_id": "R11",
+      "module_id": "shared",
+      "number": 25,
+      "html_url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/25",
+      "title": "[R11] Добавить аналитический обзор текущего этапа",
+      "github_state": "closed",
+      "github_state_reason": "completed",
+      "board_status": "Done",
+      "assignees": [
+        "aliiyaaa"
+      ],
+      "priority": "P1 - High",
+      "deadline": "2026-10-24",
+      "record_type": "retrospective-completed-work"
     }
-  ]
+  ],
+  "updated_on": "2026-10-24",
+  "board_status_counts": {
+    "Todo": 3,
+    "In Progress": 8,
+    "Done": 12
+  }
 }

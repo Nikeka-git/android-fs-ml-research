@@ -1,0 +1,128 @@
+{
+  "capture_date": "2026-10-24",
+  "source_version": "prob-period-1 (обновление 24.10.2026)",
+  "source_commit": "9bb991a5e37646c189b30344ba347cd71bdc6e59",
+  "project_url": "https://github.com/users/Nikeka-git/projects/1",
+  "status_counts": {
+    "Todo": 3,
+    "In Progress": 8,
+    "Done": 12
+  },
+  "required_issue_numbers": [
+    16,
+    23,
+    24,
+    25
+  ],
+  "notes": [
+    "Коммит выше фиксирует проверенные исходные материалы и вклад участников. Обновлённый тег также включает этот PDF и административные изменения.",
+    "24.10.2026 - срок включения в комплект сдачи, установленный при регистрации задач. Даты первоначальной разработки не восстанавливались.",
+    "Сроки будущих работ не назначены. Пустые поля сохранены в снимках."
+  ],
+  "screenshots": [
+    {
+      "path": "board-overview.jpg",
+      "kind": "board",
+      "title": "Обзор доски: статусы и количество задач",
+      "url": "https://github.com/users/Nikeka-git/projects/1/views/1",
+      "sha256": "f3af3b686d443c75d3ed6f2bf63ec5bea0b201cebab7f70362de1e6ccfe7d51d"
+    },
+    {
+      "path": "table-top.jpg",
+      "kind": "table",
+      "title": "Таблица задач: верхняя часть",
+      "url": "https://github.com/users/Nikeka-git/projects/1/views/2",
+      "sha256": "771d065eca27c1dd7571253b8d66425c4ada83baa2bab679ecf9d78acc3312da"
+    },
+    {
+      "path": "table-middle.jpg",
+      "kind": "table",
+      "title": "Таблица задач: средняя часть",
+      "url": "https://github.com/users/Nikeka-git/projects/1/views/2",
+      "sha256": "74edb287d81f9712b5fe51838cc9f1225ac91e44b8823d4f60e3c0ccbeb6ec8a"
+    },
+    {
+      "path": "table-bottom.jpg",
+      "kind": "table",
+      "title": "Таблица задач: нижняя часть",
+      "url": "https://github.com/users/Nikeka-git/projects/1/views/2",
+      "sha256": "9b1c46cf2d186229036b137e105ddad215b6fc185c2d3c8f12409132575a7007"
+    },
+    {
+      "path": "issue-16-full.jpg",
+      "kind": "issue",
+      "issue_number": 16,
+      "clip_height_px": 860,
+      "title": "Задача #16: [R04] Собрать единый исследовательский модуль трёх групп PoC",
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/16",
+      "links": [
+        {
+          "label": "Коммит",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/commit/9b84849dcd6f092b61dc2edb638a46904016f62d"
+        }
+      ],
+      "sha256": "29600b3f07baa498b48b333aaf0087ac56aa88707c19a16ed659b2c5107cc277"
+    },
+    {
+      "path": "issue-23-full.jpg",
+      "kind": "completed-example",
+      "issue_number": 23,
+      "clip_height_px": 850,
+      "title": "Задача #23: [R09] Подготовить исследовательские данные и методику оценки",
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/23",
+      "links": [
+        {
+          "label": "Коммит",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/commit/60c5ca231a5c749a7ef707516d5fa3fcf44b0bca"
+        },
+        {
+          "label": "Pull Request #21",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/pull/21"
+        }
+      ],
+      "sha256": "e09bedcbf1eeb178f18777d602a322d2d6dc8af8e55f0edacda1a679cbe60ca1"
+    },
+    {
+      "path": "issue-24-full.jpg",
+      "kind": "issue",
+      "issue_number": 24,
+      "clip_height_px": 850,
+      "title": "Задача #24: [R10] Оформить README и навигацию по материалам",
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/24",
+      "links": [
+        {
+          "label": "Коммит",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/commit/4f049e55f245c0a71148a4dee959e52fb96ed8f3"
+        },
+        {
+          "label": "Pull Request #22",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/pull/22"
+        }
+      ],
+      "sha256": "7a89738f96f47899057d3ff4e65a50514898c5b780e97d472d2fee925177389c"
+    },
+    {
+      "path": "issue-25-full.jpg",
+      "kind": "issue",
+      "issue_number": 25,
+      "clip_height_px": 810,
+      "title": "Задача #25: [R11] Добавить аналитический обзор текущего этапа",
+      "url": "https://github.com/Nikeka-git/android-fs-ml-research/issues/25",
+      "links": [
+        {
+          "label": "Коммит",
+          "url": "https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714"
+        }
+      ],
+      "sha256": "063ca3b4da248331b820fd25db97c96039a91a3507b5a9b259a47fdb74f99323"
+    }
+  ],
+  "pdf": {
+    "path": "../../../docs/report/board-and-tasks-2026-10-24.pdf",
+    "sha256": "c622f091ed441ac78dde6c840bcd0b6411b38d9229feeb49746f614335364825",
+    "bytes": 5194045,
+    "pages": 13
+  },
+  "board_visibility": "private",
+  "notice": "Native GitHub screenshots captured on 2026-10-24. Task and board metadata are external to Git; these files preserve the observed state. Bottom clipping in PDF omits only service UI; original screenshots are retained."
+}

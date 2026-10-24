@@ -52,6 +52,7 @@
     "repository_visibility": "public",
     "board_created": true,
     "board_layout": "Board",
+    "board_visibility": "private",
     "board_columns": [
       "Todo",
       "In Progress",
@@ -61,14 +62,14 @@
     "github_authentication_required": false,
     "authentication_status": "Вход выполнен, репозиторий и доска созданы",
     "published_issue_mapping": "planning/published-issues.json",
-    "issues_created": 12,
+    "issues_created": 23,
     "board_observed_counts": {
-      "Todo": 12,
-      "In Progress": 0,
-      "Done": 0
+      "Todo": 3,
+      "In Progress": 8,
+      "Done": 12
     },
-    "board_observed_date": "2026-10-15",
-    "board_observation_scope": "Historical board screenshots; current counts not rechecked"
+    "board_observed_date": "2026-10-24",
+    "board_observation_scope": "Current 23-issue board reconciliation; public issues and PDF are available separately from the private project board"
   },
   "supervisor": {
     "name": "Zhaksylyk Kozhakhmet",
@@ -94,14 +95,18 @@
       "name": "Kassymgali Bakytzhan Zhenisuly",
       "github_username": "Kerey404",
       "gitlab_username": null,
-      "responsibility": "Подготовка исследовательских данных и методики оценки",
+      "responsibility": "Подготовка исследовательских данных и методики оценки; оформление репозитория и навигации",
       "contribution_status": "Подготовлен пакет от 2026-10-24: реестр 12 публичных текстов, проверка происхождения, правила разметки и разделения, методика оценки; результаты прототипа из совместного отчёта не перезапускались",
       "confirmed_contributions": [
         "docs/research/data-preparation.md",
         "docs/research/evaluation-methodology.md",
         "data/diagnostic-texts/manifest.json",
         "tools/verify_research_sources.py",
-        "evidence/methodology/assignment3-manifest.json"
+        "evidence/methodology/assignment3-manifest.json",
+        "https://github.com/Nikeka-git/android-fs-ml-research/commit/60c5ca231a5c749a7ef707516d5fa3fcf44b0bca",
+        "https://github.com/Nikeka-git/android-fs-ml-research/pull/21",
+        "https://github.com/Nikeka-git/android-fs-ml-research/commit/4f049e55f245c0a71148a4dee959e52fb96ed8f3",
+        "https://github.com/Nikeka-git/android-fs-ml-research/pull/22"
       ],
       "youtrack_task_ids": []
     },
@@ -111,7 +116,7 @@
       "github_username": "aliiyaaa",
       "gitlab_username": null,
       "responsibility": "Аналитическая документация и оформление результатов",
-      "contribution_status": "Добавление docs/analytics.pdf подтверждено коммитом eb6dc9e; содержание и первоначальное авторство отдельно не проверялись",
+      "contribution_status": "Добавлен аналитический PDF с обзором цели, модулей, диагностического прототипа, сохранённых результатов и ограничений; загрузка подтверждена коммитом eb6dc9e, новые эксперименты не заявляются",
       "confirmed_contributions": [
         "https://github.com/Nikeka-git/android-fs-ml-research/commit/eb6dc9e2aa4f86ab6bc85cf1a6bca00171396714"
       ],
@@ -124,7 +129,7 @@
     "official_requirements": null,
     "report_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/aprobation-report-draft.pdf",
     "report_editable_html": "docs/report/aprobation-report-draft.html",
-    "board_screenshots_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/main/docs/report/board-screenshots.pdf",
+    "board_screenshots_pdf": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/report/board-and-tasks-2026-10-24.pdf",
     "submission_form": "https://forms.cloud.microsoft/r/Yy6AXT5pe3",
     "period_1_version": "https://github.com/Nikeka-git/android-fs-ml-research/tree/prob-period-1",
     "period_1_answers": "https://github.com/Nikeka-git/android-fs-ml-research/blob/prob-period-1/docs/prob-period-1.md"
@@ -139,7 +144,7 @@
     "team_details_complete": true,
     "access_verified": false,
     "submitted": false,
-    "team_contribution_evidence_complete": false,
+    "team_contribution_evidence_complete": true,
     "access_mode": "public-repository",
     "probationary_period_1": {
       "tag": "prob-period-1",
@@ -147,7 +152,10 @@
       "answers": "docs/prob-period-1.md",
       "scope": "Предоставленные пункты 4–7 формы",
       "youtrack_used": false,
-      "individual_contributions_complete": false,
+      "individual_contributions_complete": true,
+      "updated_on": "2026-10-24",
+      "research_materials_source_commit": "9bb991a5e37646c189b30344ba347cd71bdc6e59",
+      "administrative_materials": "Updated contribution records, task reconciliation and board screenshot PDF are included by the subsequent submission-preparation commit",
       "new_builds_or_experiments_run": false
     },
     "repository_access_verified": true
@@ -161,7 +169,7 @@
   },
   "reports_status": {
     "report": "Historical preliminary draft dated 2026-10-15; current stage described in docs/prob-period-1.md",
-    "board_screenshots": "Historical screenshots dated 2026-10-15; no fresh board capture claimed",
+    "board_screenshots": "Current board and task screenshots dated 2026-10-24 in docs/report/board-and-tasks-2026-10-24.pdf; older 2026-10-15 screenshots retained separately",
     "android_tests_rerun": false
   },
   "imported_research_snapshots": [
@@ -189,6 +197,6 @@
     "protocol_status": "Proposed methodology from joint Assignment 3; module-specific agreement and ACK testbed pending",
     "new_model_training_run": false,
     "new_android_or_ack_experiments_run": false,
-    "included_in_prob_period_1_tag": false
+    "included_in_prob_period_1_tag": true
   }
 }
