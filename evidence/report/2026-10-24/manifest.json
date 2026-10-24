@@ -65,8 +65,8 @@
     },
     {
       "path": "docs/report/sources/consolidated-report-content.json",
-      "bytes": 59793,
-      "sha256": "09593c1954d1b67ece5cb3cc7fe8727a8ab3cc8280f5b063ae704aa45e13c073"
+      "bytes": 58688,
+      "sha256": "ec895d8a232984512b0dc369d1ec05b04cd100a4da9e442edcc6ca86473d016c"
     },
     {
       "path": "docs/report/sources/build_consolidated_report.py",
@@ -85,13 +85,13 @@
     },
     {
       "path": "docs/diagrams/repository-evidence-map.svg",
-      "bytes": 3214,
-      "sha256": "ed90a2569823656bd02d8c274a4a4a65978c9341604d1be0aa7e8053157dd0de"
+      "bytes": 3184,
+      "sha256": "11627c89ec4e17c0ca8c904bae2b2045f1b117cc547f4800b6d6e33a4d2e9bb6"
     },
     {
       "path": "docs/diagrams/prototype-interaction-flow.svg",
-      "bytes": 3545,
-      "sha256": "053646253e7bdaabcd947362be4c61d5acd321abcb51d32288155ae7e200c0c7"
+      "bytes": 3511,
+      "sha256": "3c151f537fd093286a6ffdadec092ace030f377d71320cb480bcbed6be3ecf8d"
     }
   ]
 }
